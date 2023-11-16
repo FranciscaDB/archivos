@@ -1,0 +1,1930 @@
+*SPICE netlist created from verilog structural netlist module Modulator by vlog2Spice (qflow)
+*This file may contain array delimiters, not for use in simulation.
+
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.subckt Modulator VPWR VGND CLK_EXT CLK_PLL CLK_SR Data_SR NMOS1_PS1
++ NMOS1_PS2 NMOS2_PS1 NMOS2_PS2 NMOS_PS3 PMOS1_PS1 PMOS1_PS2 PMOS2_PS1 PMOS2_PS2
++ PMOS_PS3 RST SIGNAL_OUTPUT d1[0] d1[1] d1[2] d1[3] d1[4]
++ d1[5] d2[0] d2[1] d2[2] d2[3] d2[4] d2[5] 
+
+X_0596_ \Shift_Register_Inst.internal_data[4]\[0] VGND VGND VPWR VPWR _0182_ sky130_fd_sc_hd__clkinv_1
+X_0597_ \Shift_Register_Inst.internal_data[3]\[0] VGND VGND VPWR VPWR _0183_ sky130_fd_sc_hd__clkinv_1
+X_0598_ \Shift_Register_Inst.internal_data[2]\[0] VGND VGND VPWR VPWR _0184_ sky130_fd_sc_hd__clkinv_1
+X_0599_ \Dead_Time_Generator_inst_1.count_dt\[4] VGND VGND VPWR VPWR _0185_ sky130_fd_sc_hd__clkinv_1
+X_0600_ \Dead_Time_Generator_inst_1.count_dt\[3] VGND VGND VPWR VPWR _0186_ sky130_fd_sc_hd__clkinv_1
+X_0601_ \Dead_Time_Generator_inst_1.count_dt\[1] VGND VGND VPWR VPWR _0187_ sky130_fd_sc_hd__clkinv_1
+X_0602_ \Dead_Time_Generator_inst_1.count_dt\[0] VGND VGND VPWR VPWR _0188_ sky130_fd_sc_hd__clkinv_1
+X_0603_ \Dead_Time_Generator_inst_2.count_dt\[2] VGND VGND VPWR VPWR _0189_ sky130_fd_sc_hd__clkinv_1
+X_0604_ \Dead_Time_Generator_inst_3.count_dt\[4] VGND VGND VPWR VPWR _0190_ sky130_fd_sc_hd__clkinv_1
+X_0605_ \Dead_Time_Generator_inst_3.count_dt\[3] VGND VGND VPWR VPWR _0191_ sky130_fd_sc_hd__clkinv_1
+X_0606_ \Dead_Time_Generator_inst_3.count_dt\[1] VGND VGND VPWR VPWR _0192_ sky130_fd_sc_hd__clkinv_1
+X_0607_ \Dead_Time_Generator_inst_3.count_dt\[0] VGND VGND VPWR VPWR _0193_ sky130_fd_sc_hd__clkinv_1
+X_0608_ \Dead_Time_Generator_inst_4.count_dt\[2] VGND VGND VPWR VPWR _0194_ sky130_fd_sc_hd__clkinv_1
+X_0609_ RST VGND VGND VPWR VPWR _0000_ sky130_fd_sc_hd__clkinv_1
+X_0610_ \Signal_Generator_2_90phase_inst.count\[0] VGND VGND VPWR VPWR _0175_ sky130_fd_sc_hd__clkinv_1
+X_0611_ \Signal_Generator_2_90phase_inst.count\[4] VGND VGND VPWR VPWR _0195_ sky130_fd_sc_hd__clkinv_1
+X_0612_ \Signal_Generator_2_90phase_inst.count\[3] VGND VGND VPWR VPWR _0196_ sky130_fd_sc_hd__clkinv_1
+X_0613_ \Signal_Generator_2_180phase_inst.count\[3] VGND VGND VPWR VPWR _0197_ sky130_fd_sc_hd__clkinv_1
+X_0614_ \Signal_Generator_2_180phase_inst.count\[0] VGND VGND VPWR VPWR _0161_ sky130_fd_sc_hd__clkinv_1
+X_0615_ \Signal_Generator_2_270phase_inst.count\[0] VGND VGND VPWR VPWR _0168_ sky130_fd_sc_hd__clkinv_1
+X_0616_ \Signal_Generator_2_270phase_inst.count\[3] VGND VGND VPWR VPWR _0198_ sky130_fd_sc_hd__clkinv_1
+X_0617_ \Signal_Generator_2_0phase_inst.count\[0] VGND VGND VPWR VPWR _0154_ sky130_fd_sc_hd__clkinv_1
+X_0618_ \Signal_Generator_2_0phase_inst.count\[3] VGND VGND VPWR VPWR _0199_ sky130_fd_sc_hd__clkinv_1
+X_0619_ \Signal_Generator_1_270phase_inst.count\[0] VGND VGND VPWR VPWR _0140_ sky130_fd_sc_hd__clkinv_1
+X_0620_ \Signal_Generator_1_180phase_inst.count\[0] VGND VGND VPWR VPWR _0133_ sky130_fd_sc_hd__clkinv_1
+X_0621_ \Signal_Generator_1_90phase_inst.count\[0] VGND VGND VPWR VPWR _0147_ sky130_fd_sc_hd__clkinv_1
+X_0622_ \Signal_Generator_1_0phase_inst.count\[0] VGND VGND VPWR VPWR _0126_ sky130_fd_sc_hd__clkinv_1
+X_0623_ d1[0] VGND VGND VPWR VPWR _0200_ sky130_fd_sc_hd__clkinv_1
+X_0624_ \Shift_Register_Inst.shift_state\[2] \Shift_Register_Inst.shift_state\[3] VGND VGND VPWR VPWR 
++ _0201_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0625_ \Shift_Register_Inst.shift_state\[3] \Shift_Register_Inst.shift_state\[2] VGND VGND VPWR VPWR 
++ _0202_
++ sky130_fd_sc_hd__nor2_1
+X_0626_ \Shift_Register_Inst.shift_state\[3] \Shift_Register_Inst.shift_state\[2] \Shift_Register_Inst.shift_state\[1] VGND VGND VPWR 
++ VPWR
++ _0203_ sky130_fd_sc_hd__nor3_1
+X_0627_ \Shift_Register_Inst.shift_state\[4] _0203_ VGND VGND VPWR VPWR 
++ _0204_
++ sky130_fd_sc_hd__nand2_1
+X_0628_ \Shift_Register_Inst.shift_state\[4] \Shift_Register_Inst.shift_state\[0] _0203_ VGND VGND VPWR 
++ VPWR
++ _0205_ sky130_fd_sc_hd__nand3_1
+X_0629_ Data_SR \Shift_Register_Inst.internal_data[17]\[0] _0205_ VGND VGND VPWR 
++ VPWR
++ _0125_ sky130_fd_sc_hd__mux2_1
+X_0630_ \Shift_Register_Inst.shift_state\[0] _0204_ VGND VGND VPWR VPWR 
++ _0206_
++ sky130_fd_sc_hd__nor2_1
+X_0631_ \Shift_Register_Inst.internal_data[16]\[0] Data_SR _0206_ VGND VGND VPWR 
++ VPWR
++ _0124_ sky130_fd_sc_hd__mux2_1
+X_0632_ \Shift_Register_Inst.shift_state\[1] \Shift_Register_Inst.shift_state\[0] VGND VGND VPWR VPWR 
++ _0207_
++ sky130_fd_sc_hd__nand2_1
+X_0633_ \Shift_Register_Inst.shift_state\[4] _0207_ VGND VGND VPWR VPWR 
++ _0208_
++ sky130_fd_sc_hd__nor2_1
+X_0634_ \Shift_Register_Inst.shift_state\[3] \Shift_Register_Inst.shift_state\[2] _0208_ VGND VGND VPWR 
++ VPWR
++ _0209_ sky130_fd_sc_hd__nand3_1
+X_0635_ Data_SR \Shift_Register_Inst.internal_data[15]\[0] _0209_ VGND VGND VPWR 
++ VPWR
++ _0123_ sky130_fd_sc_hd__mux2_1
+X_0636_ \Shift_Register_Inst.shift_state\[4] \Shift_Register_Inst.shift_state\[0] \Shift_Register_Inst.shift_state\[1] VGND VGND VPWR 
++ VPWR
++ _0210_ sky130_fd_sc_hd__nor3b_1
+X_0637_ \Shift_Register_Inst.shift_state\[3] \Shift_Register_Inst.shift_state\[2] _0210_ VGND VGND VPWR 
++ VPWR
++ _0211_ sky130_fd_sc_hd__nand3_1
+X_0638_ Data_SR \Shift_Register_Inst.internal_data[14]\[0] _0211_ VGND VGND VPWR 
++ VPWR
++ _0122_ sky130_fd_sc_hd__mux2_1
+X_0639_ \Shift_Register_Inst.shift_state\[4] \Shift_Register_Inst.shift_state\[1] \Shift_Register_Inst.shift_state\[0] VGND VGND VPWR 
++ VPWR
++ _0212_ sky130_fd_sc_hd__nor3b_1
+X_0640_ \Shift_Register_Inst.shift_state\[3] \Shift_Register_Inst.shift_state\[2] _0212_ VGND VGND VPWR 
++ VPWR
++ _0213_ sky130_fd_sc_hd__nand3_1
+X_0641_ Data_SR \Shift_Register_Inst.internal_data[13]\[0] _0213_ VGND VGND VPWR 
++ VPWR
++ _0121_ sky130_fd_sc_hd__mux2_1
+X_0642_ \Shift_Register_Inst.shift_state\[4] \Shift_Register_Inst.shift_state\[1] \Shift_Register_Inst.shift_state\[0] VGND VGND VPWR 
++ VPWR
++ _0214_ sky130_fd_sc_hd__nor3_1
+X_0643_ \Shift_Register_Inst.shift_state\[3] \Shift_Register_Inst.shift_state\[2] _0214_ VGND VGND VPWR 
++ VPWR
++ _0215_ sky130_fd_sc_hd__nand3_1
+X_0644_ Data_SR \Shift_Register_Inst.internal_data[12]\[0] _0215_ VGND VGND VPWR 
++ VPWR
++ _0120_ sky130_fd_sc_hd__mux2_1
+X_0645_ \Shift_Register_Inst.shift_state\[3] \Shift_Register_Inst.shift_state\[2] VGND VGND VPWR VPWR 
++ _0216_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0646_ _0208_ _0216_ VGND VGND VPWR VPWR 
++ _0217_
++ sky130_fd_sc_hd__nand2_1
+X_0647_ Data_SR \Shift_Register_Inst.internal_data[11]\[0] _0217_ VGND VGND VPWR 
++ VPWR
++ _0119_ sky130_fd_sc_hd__mux2_1
+X_0648_ _0210_ _0216_ VGND VGND VPWR VPWR 
++ _0218_
++ sky130_fd_sc_hd__nand2_1
+X_0649_ Data_SR \Shift_Register_Inst.internal_data[10]\[0] _0218_ VGND VGND VPWR 
++ VPWR
++ _0118_ sky130_fd_sc_hd__mux2_1
+X_0650_ _0212_ _0216_ VGND VGND VPWR VPWR 
++ _0219_
++ sky130_fd_sc_hd__nand2_1
+X_0651_ Data_SR \Shift_Register_Inst.internal_data[9]\[0] _0219_ VGND VGND VPWR 
++ VPWR
++ _0117_ sky130_fd_sc_hd__mux2_1
+X_0652_ _0214_ _0216_ VGND VGND VPWR VPWR 
++ _0220_
++ sky130_fd_sc_hd__nand2_1
+X_0653_ Data_SR \Shift_Register_Inst.internal_data[8]\[0] _0220_ VGND VGND VPWR 
++ VPWR
++ _0116_ sky130_fd_sc_hd__mux2_1
+X_0654_ \Shift_Register_Inst.shift_state\[2] _0208_ VGND VGND VPWR VPWR 
++ _0221_
++ sky130_fd_sc_hd__nand2_1
+X_0655_ _0201_ _0208_ VGND VGND VPWR VPWR 
++ _0222_
++ sky130_fd_sc_hd__nand2_1
+X_0656_ Data_SR \Shift_Register_Inst.internal_data[7]\[0] _0222_ VGND VGND VPWR 
++ VPWR
++ _0115_ sky130_fd_sc_hd__mux2_1
+X_0657_ _0201_ _0210_ VGND VGND VPWR VPWR 
++ _0223_
++ sky130_fd_sc_hd__nand2_1
+X_0658_ Data_SR \Shift_Register_Inst.internal_data[6]\[0] _0223_ VGND VGND VPWR 
++ VPWR
++ _0114_ sky130_fd_sc_hd__mux2_1
+X_0659_ _0201_ _0212_ VGND VGND VPWR VPWR 
++ _0224_
++ sky130_fd_sc_hd__nand2_1
+X_0660_ Data_SR \Shift_Register_Inst.internal_data[5]\[0] _0224_ VGND VGND VPWR 
++ VPWR
++ _0113_ sky130_fd_sc_hd__mux2_1
+X_0661_ _0201_ _0214_ VGND VGND VPWR VPWR 
++ _0225_
++ sky130_fd_sc_hd__nand2_1
+X_0662_ Data_SR _0225_ VGND VGND VPWR VPWR 
++ _0226_
++ sky130_fd_sc_hd__nor2_1
+X_0663_ _0182_ _0225_ _0226_ VGND VGND VPWR 
++ VPWR
++ _0112_ sky130_fd_sc_hd__a21oi_1
+X_0664_ _0202_ _0208_ VGND VGND VPWR VPWR 
++ _0227_
++ sky130_fd_sc_hd__nand2_1
+X_0665_ Data_SR _0227_ VGND VGND VPWR VPWR 
++ _0228_
++ sky130_fd_sc_hd__nor2_1
+X_0666_ _0183_ _0227_ _0228_ VGND VGND VPWR 
++ VPWR
++ _0111_ sky130_fd_sc_hd__a21oi_1
+X_0667_ _0202_ _0210_ VGND VGND VPWR VPWR 
++ _0229_
++ sky130_fd_sc_hd__nand2_1
+X_0668_ Data_SR _0229_ VGND VGND VPWR VPWR 
++ _0230_
++ sky130_fd_sc_hd__nor2_1
+X_0669_ _0184_ _0229_ _0230_ VGND VGND VPWR 
++ VPWR
++ _0110_ sky130_fd_sc_hd__a21oi_1
+X_0670_ _0202_ _0212_ VGND VGND VPWR VPWR 
++ _0231_
++ sky130_fd_sc_hd__nand2_1
+X_0671_ Data_SR \Shift_Register_Inst.internal_data[1]\[0] _0231_ VGND VGND VPWR 
++ VPWR
++ _0109_ sky130_fd_sc_hd__mux2_1
+X_0672_ \Shift_Register_Inst.shift_state\[3] \Shift_Register_Inst.shift_state\[2] \Shift_Register_Inst.shift_state\[1] \Shift_Register_Inst.shift_state\[0] \Shift_Register_Inst.shift_state\[4] VGND 
++ VGND
++ VPWR VPWR _0108_ sky130_fd_sc_hd__a41o_1
+X_0673_ \Shift_Register_Inst.shift_state\[3] _0221_ VGND VGND VPWR VPWR 
++ _0232_
++ sky130_fd_sc_hd__nand2_1
+X_0674_ _0222_ _0232_ VGND VGND VPWR VPWR 
++ _0107_
++ sky130_fd_sc_hd__nand2_1
+X_0675_ \Shift_Register_Inst.shift_state\[2] _0208_ VGND VGND VPWR VPWR 
++ _0106_
++ sky130_fd_sc_hd__xor2_1
+X_0676_ _0203_ \Shift_Register_Inst.shift_state\[4] VGND VGND VPWR VPWR 
++ _0233_
++ sky130_fd_sc_hd__nand2b_1
+X_0677_ \Shift_Register_Inst.shift_state\[0] _0233_ \Shift_Register_Inst.shift_state\[1] VGND VGND VPWR 
++ VPWR
++ _0234_ sky130_fd_sc_hd__a21oi_1
+X_0678_ _0208_ _0234_ VGND VGND VPWR VPWR 
++ _0105_
++ sky130_fd_sc_hd__nor2_1
+X_0679_ \Shift_Register_Inst.shift_state\[0] _0233_ VGND VGND VPWR VPWR 
++ _0104_
++ sky130_fd_sc_hd__xor2_1
+X_0680_ _0202_ _0214_ VGND VGND VPWR VPWR 
++ _0235_
++ sky130_fd_sc_hd__nand2_1
+X_0681_ Data_SR \Shift_Register_Inst.internal_data[0]\[0] _0235_ VGND VGND VPWR 
++ VPWR
++ _0084_ sky130_fd_sc_hd__mux2_1
+X_0682_ \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_180phase_inst.count\[5] \Shift_Register_Inst.internal_data[8]\[0] VGND VGND VPWR 
++ VPWR
++ _0236_ sky130_fd_sc_hd__nand3b_1
+X_0683_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] VGND VGND VPWR VPWR 
++ _0237_
++ sky130_fd_sc_hd__nor2_1
+X_0684_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_90phase_inst.count\[5] VGND VGND VPWR 
++ VPWR
++ _0238_ sky130_fd_sc_hd__nand3b_1
+X_0685_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_270phase_inst.count\[5] VGND VGND VPWR 
++ VPWR
++ _0239_ sky130_fd_sc_hd__nand3_1
+X_0686_ _0236_ _0238_ _0239_ VGND VGND VPWR 
++ VPWR
++ _0240_ sky130_fd_sc_hd__nand3_1
+X_0687_ \Signal_Generator_2_0phase_inst.count\[5] _0237_ _0240_ VGND VGND VPWR 
++ VPWR
++ _0241_ sky130_fd_sc_hd__a21oi_1
+X_0688_ d2[5] _0241_ VGND VGND VPWR VPWR 
++ _0242_
++ sky130_fd_sc_hd__nor2_1
+X_0689_ d2[5] _0241_ VGND VGND VPWR VPWR 
++ _0243_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_0690_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_0phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0244_ sky130_fd_sc_hd__or3b_1
+X_0691_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_90phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0245_ sky130_fd_sc_hd__nand3b_1
+X_0692_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_270phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0246_ sky130_fd_sc_hd__nand3_1
+X_0693_ \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_180phase_inst.count\[1] \Shift_Register_Inst.internal_data[8]\[0] VGND VGND VPWR 
++ VPWR
++ _0247_ sky130_fd_sc_hd__nand3b_1
+X_0694_ _0244_ _0245_ _0246_ _0247_ VGND VGND 
++ VPWR
++ VPWR _0248_ sky130_fd_sc_hd__and4_1
+X_0695_ \Signal_Generator_2_0phase_inst.count\[0] \Signal_Generator_2_180phase_inst.count\[0] \Signal_Generator_2_90phase_inst.count\[0] \Signal_Generator_2_270phase_inst.count\[0] \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] 
++ VGND
++ VGND VPWR VPWR _0249_ sky130_fd_sc_hd__mux4_2
+X_0696_ d2[0] _0249_ VGND VGND VPWR VPWR 
++ _0250_
++ sky130_fd_sc_hd__nand2b_1
+X_0697_ d2[1] _0248_ _0250_ VGND VGND VPWR 
++ VPWR
++ _0251_ sky130_fd_sc_hd__a21oi_1
+X_0698_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_0phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0252_ sky130_fd_sc_hd__or3b_1
+X_0699_ \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_180phase_inst.count\[2] \Shift_Register_Inst.internal_data[8]\[0] VGND VGND VPWR 
++ VPWR
++ _0253_ sky130_fd_sc_hd__nand3b_1
+X_0700_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0254_ sky130_fd_sc_hd__nand3_1
+X_0701_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_90phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0255_ sky130_fd_sc_hd__nand3b_1
+X_0702_ _0252_ _0253_ _0254_ _0255_ VGND VGND 
++ VPWR
++ VPWR _0256_ sky130_fd_sc_hd__and4_1
+X_0703_ d2[1] _0248_ _0256_ d2[2] VGND VGND 
++ VPWR
++ VPWR _0257_ sky130_fd_sc_hd__o22ai_1
+X_0704_ _0199_ _0197_ _0196_ _0198_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] 
++ VGND
++ VGND VPWR VPWR _0258_ sky130_fd_sc_hd__mux4_2
+X_0705_ d2[2] _0256_ _0258_ d2[3] VGND VGND 
++ VPWR
++ VPWR _0259_ sky130_fd_sc_hd__a22oi_1
+X_0706_ _0251_ _0257_ _0259_ VGND VGND VPWR 
++ VPWR
++ _0260_ sky130_fd_sc_hd__o21a_1
+X_0707_ \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_180phase_inst.count\[4] \Shift_Register_Inst.internal_data[8]\[0] VGND VGND VPWR 
++ VPWR
++ _0261_ sky130_fd_sc_hd__nand3b_1
+X_0708_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_90phase_inst.count\[4] VGND VGND VPWR 
++ VPWR
++ _0262_ sky130_fd_sc_hd__nand3b_1
+X_0709_ \Shift_Register_Inst.internal_data[8]\[0] \Shift_Register_Inst.internal_data[7]\[0] \Signal_Generator_2_270phase_inst.count\[4] VGND VGND VPWR 
++ VPWR
++ _0263_ sky130_fd_sc_hd__nand3_1
+X_0710_ _0261_ _0262_ _0263_ VGND VGND VPWR 
++ VPWR
++ _0264_ sky130_fd_sc_hd__nand3_1
+X_0711_ \Signal_Generator_2_0phase_inst.count\[4] _0237_ _0264_ VGND VGND VPWR 
++ VPWR
++ _0265_ sky130_fd_sc_hd__a21oi_1
+X_0712_ d2[3] _0258_ _0265_ d2[4] VGND VGND 
++ VPWR
++ VPWR _0266_ sky130_fd_sc_hd__o22ai_1
+X_0713_ d2[5] _0241_ VGND VGND VPWR VPWR 
++ _0267_
++ sky130_fd_sc_hd__nand2_1
+X_0714_ d2[4] _0265_ VGND VGND VPWR VPWR 
++ _0268_
++ sky130_fd_sc_hd__nand2_1
+X_0715_ _0260_ _0266_ _0267_ _0268_ VGND VGND 
++ VPWR
++ VPWR _0269_ sky130_fd_sc_hd__o211a_1
+X_0716_ _0260_ _0266_ _0267_ _0268_ VGND VGND 
++ VPWR
++ VPWR _0270_ sky130_fd_sc_hd__o211ai_1
+X_0717_ _0182_ \Dead_Time_Generator_inst_4.count_dt\[4] VGND VGND VPWR VPWR 
++ _0271_
++ sky130_fd_sc_hd__nand2_1
+X_0718_ \Shift_Register_Inst.internal_data[2]\[0] _0194_ VGND VGND VPWR VPWR 
++ _0272_
++ sky130_fd_sc_hd__nand2_1
+X_0719_ \Shift_Register_Inst.internal_data[0]\[0] \Dead_Time_Generator_inst_4.count_dt\[0] VGND VGND VPWR VPWR 
++ _0273_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0720_ \Shift_Register_Inst.internal_data[1]\[0] \Dead_Time_Generator_inst_4.count_dt\[1] VGND VGND VPWR VPWR 
++ _0274_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0721_ \Shift_Register_Inst.internal_data[1]\[0] \Dead_Time_Generator_inst_4.count_dt\[1] VGND VGND VPWR VPWR 
++ _0275_
++ sky130_fd_sc_hd__nand2b_1
+X_0722_ \Shift_Register_Inst.internal_data[2]\[0] _0194_ _0273_ _0274_ _0275_ VGND 
++ VGND
++ VPWR VPWR _0276_ sky130_fd_sc_hd__o221ai_1
+X_0723_ _0183_ \Dead_Time_Generator_inst_4.count_dt\[3] _0272_ _0276_ VGND VGND 
++ VPWR
++ VPWR _0277_ sky130_fd_sc_hd__a22oi_1
+X_0724_ _0182_ \Dead_Time_Generator_inst_4.count_dt\[4] \Dead_Time_Generator_inst_4.count_dt\[3] _0183_ VGND VGND 
++ VPWR
++ VPWR _0278_ sky130_fd_sc_hd__o22ai_1
+X_0725_ _0277_ _0278_ _0271_ VGND VGND VPWR 
++ VPWR
++ _0279_ sky130_fd_sc_hd__o21ai_0
+X_0726_ _0277_ _0278_ \Dead_Time_Generator_inst_4.count_dt\[0] _0271_ VGND VGND 
++ VPWR
++ VPWR _0280_ sky130_fd_sc_hd__o211ai_1
+X_0727_ \Dead_Time_Generator_inst_4.count_dt\[0] _0279_ VGND VGND VPWR VPWR 
++ _0281_
++ sky130_fd_sc_hd__xor2_1
+X_0728_ _0243_ _0270_ _0281_ VGND VGND VPWR 
++ VPWR
++ _0079_ sky130_fd_sc_hd__a21oi_1
+X_0729_ _0277_ _0278_ \Dead_Time_Generator_inst_4.count_dt\[1] \Dead_Time_Generator_inst_4.count_dt\[0] _0271_ VGND 
++ VGND
++ VPWR VPWR _0282_ sky130_fd_sc_hd__o2111a_1
+X_0730_ \Dead_Time_Generator_inst_4.count_dt\[1] _0280_ VGND VGND VPWR VPWR 
++ _0283_
++ sky130_fd_sc_hd__xor2_1
+X_0731_ _0243_ _0270_ _0283_ VGND VGND VPWR 
++ VPWR
++ _0080_ sky130_fd_sc_hd__a21oi_1
+X_0732_ \Dead_Time_Generator_inst_4.count_dt\[2] _0282_ VGND VGND VPWR VPWR 
++ _0284_
++ sky130_fd_sc_hd__xnor2_1
+X_0733_ _0243_ _0270_ _0284_ VGND VGND VPWR 
++ VPWR
++ _0081_ sky130_fd_sc_hd__a21oi_1
+X_0734_ \Dead_Time_Generator_inst_4.count_dt\[2] _0282_ \Dead_Time_Generator_inst_4.count_dt\[3] VGND VGND VPWR 
++ VPWR
++ _0285_ sky130_fd_sc_hd__a21oi_1
+X_0735_ \Dead_Time_Generator_inst_4.count_dt\[3] \Dead_Time_Generator_inst_4.count_dt\[2] _0282_ VGND VGND VPWR 
++ VPWR
++ _0286_ sky130_fd_sc_hd__and3_1
+X_0736_ _0243_ _0270_ _0285_ _0286_ VGND VGND 
++ VPWR
++ VPWR _0082_ sky130_fd_sc_hd__a211oi_1
+X_0737_ _0242_ _0269_ _0286_ \Dead_Time_Generator_inst_4.count_dt\[4] VGND VGND 
++ VPWR
++ VPWR _0083_ sky130_fd_sc_hd__o22a_1
+X_0738_ \Shift_Register_Inst.internal_data[4]\[0] _0190_ VGND VGND VPWR VPWR 
++ _0287_
++ sky130_fd_sc_hd__nor2_1
+X_0739_ _0184_ \Dead_Time_Generator_inst_3.count_dt\[2] VGND VGND VPWR VPWR 
++ _0288_
++ sky130_fd_sc_hd__nor2_1
+X_0740_ \Dead_Time_Generator_inst_3.count_dt\[0] \Shift_Register_Inst.internal_data[0]\[0] VGND VGND VPWR VPWR 
++ _0289_
++ sky130_fd_sc_hd__nand2b_1
+X_0741_ \Dead_Time_Generator_inst_3.count_dt\[1] \Shift_Register_Inst.internal_data[1]\[0] VGND VGND VPWR VPWR 
++ _0290_
++ sky130_fd_sc_hd__nand2b_1
+X_0742_ \Dead_Time_Generator_inst_3.count_dt\[1] \Shift_Register_Inst.internal_data[1]\[0] VGND VGND VPWR VPWR 
++ _0291_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0743_ _0184_ \Dead_Time_Generator_inst_3.count_dt\[2] _0289_ _0290_ _0291_ VGND 
++ VGND
++ VPWR VPWR _0292_ sky130_fd_sc_hd__a221oi_1
+X_0744_ \Shift_Register_Inst.internal_data[3]\[0] _0191_ _0288_ _0292_ VGND VGND 
++ VPWR
++ VPWR _0293_ sky130_fd_sc_hd__o22ai_1
+X_0745_ \Shift_Register_Inst.internal_data[4]\[0] _0190_ _0191_ \Shift_Register_Inst.internal_data[3]\[0] VGND VGND 
++ VPWR
++ VPWR _0294_ sky130_fd_sc_hd__a22oi_1
+X_0746_ _0293_ _0294_ _0287_ VGND VGND VPWR 
++ VPWR
++ _0295_ sky130_fd_sc_hd__a21oi_1
+X_0747_ \Dead_Time_Generator_inst_3.count_dt\[0] _0295_ VGND VGND VPWR VPWR 
++ _0296_
++ sky130_fd_sc_hd__xnor2_1
+X_0748_ _0242_ _0269_ _0296_ VGND VGND VPWR 
++ VPWR
++ _0085_ sky130_fd_sc_hd__nor3_1
+X_0749_ \Dead_Time_Generator_inst_3.count_dt\[0] _0295_ \Dead_Time_Generator_inst_3.count_dt\[1] VGND VGND VPWR 
++ VPWR
++ _0297_ sky130_fd_sc_hd__a21oi_1
+X_0750_ _0293_ _0294_ _0192_ _0193_ _0287_ VGND 
++ VGND
++ VPWR VPWR _0298_ sky130_fd_sc_hd__a2111oi_0
+X_0751_ _0242_ _0269_ _0297_ _0298_ VGND VGND 
++ VPWR
++ VPWR _0086_ sky130_fd_sc_hd__nor4_1
+X_0752_ \Dead_Time_Generator_inst_3.count_dt\[2] _0298_ VGND VGND VPWR VPWR 
++ _0299_
++ sky130_fd_sc_hd__xnor2_1
+X_0753_ _0242_ _0269_ _0299_ VGND VGND VPWR 
++ VPWR
++ _0087_ sky130_fd_sc_hd__nor3_1
+X_0754_ \Dead_Time_Generator_inst_3.count_dt\[3] \Dead_Time_Generator_inst_3.count_dt\[2] _0298_ VGND VGND VPWR 
++ VPWR
++ _0300_ sky130_fd_sc_hd__nand3_1
+X_0755_ \Dead_Time_Generator_inst_3.count_dt\[2] _0298_ \Dead_Time_Generator_inst_3.count_dt\[3] VGND VGND VPWR 
++ VPWR
++ _0301_ sky130_fd_sc_hd__a21o_1
+X_0756_ _0243_ _0270_ _0300_ _0301_ VGND VGND 
++ VPWR
++ VPWR _0088_ sky130_fd_sc_hd__and4_1
+X_0757_ _0190_ _0300_ _0269_ _0242_ VGND VGND 
++ VPWR
++ VPWR _0089_ sky130_fd_sc_hd__a211oi_1
+X_0758_ _0243_ _0270_ _0279_ VGND VGND VPWR 
++ VPWR
++ _0090_ sky130_fd_sc_hd__a21boi_0
+X_0759_ \Shift_Register_Inst.internal_data[16]\[0] d1[5] VGND VGND VPWR VPWR 
++ _0302_
++ sky130_fd_sc_hd__nand2b_1
+X_0760_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] VGND VGND VPWR VPWR 
++ _0303_
++ sky130_fd_sc_hd__nor2_1
+X_0761_ \Signal_Generator_1_0phase_inst.count\[5] \Signal_Generator_1_90phase_inst.count\[5] \Signal_Generator_1_180phase_inst.count\[5] \Signal_Generator_1_270phase_inst.count\[5] \Shift_Register_Inst.internal_data[5]\[0] \Shift_Register_Inst.internal_data[6]\[0] 
++ VGND
++ VGND VPWR VPWR _0304_ sky130_fd_sc_hd__mux4_2
+X_0762_ _0302_ _0304_ VGND VGND VPWR VPWR 
++ _0305_
++ sky130_fd_sc_hd__and2_0
+X_0763_ _0302_ _0304_ VGND VGND VPWR VPWR 
++ _0306_
++ sky130_fd_sc_hd__nand2_1
+X_0764_ \Shift_Register_Inst.internal_data[13]\[0] d1[1] VGND VGND VPWR VPWR 
++ _0307_
++ sky130_fd_sc_hd__nand2b_1
+X_0765_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_270phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0308_ sky130_fd_sc_hd__nand3_1
+X_0766_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_90phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0309_ sky130_fd_sc_hd__nand3b_1
+X_0767_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_0phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0310_ sky130_fd_sc_hd__or3b_1
+X_0768_ \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_180phase_inst.count\[1] \Shift_Register_Inst.internal_data[6]\[0] VGND VGND VPWR 
++ VPWR
++ _0311_ sky130_fd_sc_hd__nand3b_1
+X_0769_ _0308_ _0309_ _0310_ _0311_ VGND VGND 
++ VPWR
++ VPWR _0312_ sky130_fd_sc_hd__nand4_1
+X_0770_ \Signal_Generator_1_0phase_inst.count\[0] \Signal_Generator_1_90phase_inst.count\[0] \Signal_Generator_1_180phase_inst.count\[0] \Signal_Generator_1_270phase_inst.count\[0] \Shift_Register_Inst.internal_data[5]\[0] \Shift_Register_Inst.internal_data[6]\[0] 
++ VGND
++ VGND VPWR VPWR _0313_ sky130_fd_sc_hd__mux4_2
+X_0771_ \Shift_Register_Inst.internal_data[13]\[0] _0200_ _0307_ _0312_ _0313_ VGND 
++ VGND
++ VPWR VPWR _0314_ sky130_fd_sc_hd__o221ai_1
+X_0772_ \Shift_Register_Inst.internal_data[13]\[0] d1[2] VGND VGND VPWR VPWR 
++ _0315_
++ sky130_fd_sc_hd__nand2b_1
+X_0773_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0316_ sky130_fd_sc_hd__nand3_1
+X_0774_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_90phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0317_ sky130_fd_sc_hd__nand3b_1
+X_0775_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_0phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0318_ sky130_fd_sc_hd__or3b_1
+X_0776_ \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_180phase_inst.count\[2] \Shift_Register_Inst.internal_data[6]\[0] VGND VGND VPWR 
++ VPWR
++ _0319_ sky130_fd_sc_hd__nand3b_1
+X_0777_ _0316_ _0317_ _0318_ _0319_ VGND VGND 
++ VPWR
++ VPWR _0320_ sky130_fd_sc_hd__nand4_1
+X_0778_ _0307_ _0312_ _0315_ _0320_ VGND VGND 
++ VPWR
++ VPWR _0321_ sky130_fd_sc_hd__a22oi_1
+X_0779_ \Shift_Register_Inst.internal_data[13]\[0] d1[3] VGND VGND VPWR VPWR 
++ _0322_
++ sky130_fd_sc_hd__nand2b_1
+X_0780_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_0phase_inst.count\[3] VGND VGND VPWR 
++ VPWR
++ _0323_ sky130_fd_sc_hd__or3b_1
+X_0781_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_90phase_inst.count\[3] VGND VGND VPWR 
++ VPWR
++ _0324_ sky130_fd_sc_hd__nand3b_1
+X_0782_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_270phase_inst.count\[3] VGND VGND VPWR 
++ VPWR
++ _0325_ sky130_fd_sc_hd__nand3_1
+X_0783_ \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_180phase_inst.count\[3] \Shift_Register_Inst.internal_data[6]\[0] VGND VGND VPWR 
++ VPWR
++ _0326_ sky130_fd_sc_hd__nand3b_1
+X_0784_ _0323_ _0324_ _0325_ _0326_ VGND VGND 
++ VPWR
++ VPWR _0327_ sky130_fd_sc_hd__nand4_1
+X_0785_ _0315_ _0320_ _0322_ _0327_ VGND VGND 
++ VPWR
++ VPWR _0328_ sky130_fd_sc_hd__o22ai_1
+X_0786_ _0314_ _0321_ _0328_ VGND VGND VPWR 
++ VPWR
++ _0329_ sky130_fd_sc_hd__a21oi_1
+X_0787_ \Shift_Register_Inst.internal_data[16]\[0] d1[4] VGND VGND VPWR VPWR 
++ _0330_
++ sky130_fd_sc_hd__nand2b_1
+X_0788_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_270phase_inst.count\[4] VGND VGND VPWR 
++ VPWR
++ _0331_ sky130_fd_sc_hd__nand3_1
+X_0789_ \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_180phase_inst.count\[4] \Shift_Register_Inst.internal_data[6]\[0] VGND VGND VPWR 
++ VPWR
++ _0332_ sky130_fd_sc_hd__nand3b_1
+X_0790_ \Signal_Generator_1_0phase_inst.count\[4] _0303_ VGND VGND VPWR VPWR 
++ _0333_
++ sky130_fd_sc_hd__nand2_1
+X_0791_ \Shift_Register_Inst.internal_data[6]\[0] \Shift_Register_Inst.internal_data[5]\[0] \Signal_Generator_1_90phase_inst.count\[4] VGND VGND VPWR 
++ VPWR
++ _0334_ sky130_fd_sc_hd__nand3b_1
+X_0792_ _0331_ _0332_ _0333_ _0334_ VGND VGND 
++ VPWR
++ VPWR _0335_ sky130_fd_sc_hd__nand4_1
+X_0793_ _0322_ _0327_ _0330_ _0335_ VGND VGND 
++ VPWR
++ VPWR _0336_ sky130_fd_sc_hd__a22o_1
+X_0794_ _0302_ _0304_ _0330_ _0335_ VGND VGND 
++ VPWR
++ VPWR _0337_ sky130_fd_sc_hd__o22a_1
+X_0795_ _0329_ _0336_ _0337_ VGND VGND VPWR 
++ VPWR
++ _0338_ sky130_fd_sc_hd__o21a_1
+X_0796_ _0329_ _0336_ _0337_ VGND VGND VPWR 
++ VPWR
++ _0339_ sky130_fd_sc_hd__o21ai_0
+X_0797_ _0182_ \Dead_Time_Generator_inst_2.count_dt\[4] VGND VGND VPWR VPWR 
++ _0340_
++ sky130_fd_sc_hd__nand2_1
+X_0798_ \Shift_Register_Inst.internal_data[2]\[0] _0189_ VGND VGND VPWR VPWR 
++ _0341_
++ sky130_fd_sc_hd__nand2_1
+X_0799_ \Shift_Register_Inst.internal_data[0]\[0] \Dead_Time_Generator_inst_2.count_dt\[0] VGND VGND VPWR VPWR 
++ _0342_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0800_ \Shift_Register_Inst.internal_data[1]\[0] \Dead_Time_Generator_inst_2.count_dt\[1] VGND VGND VPWR VPWR 
++ _0343_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0801_ \Shift_Register_Inst.internal_data[1]\[0] \Dead_Time_Generator_inst_2.count_dt\[1] VGND VGND VPWR VPWR 
++ _0344_
++ sky130_fd_sc_hd__nand2b_1
+X_0802_ \Shift_Register_Inst.internal_data[2]\[0] _0189_ _0342_ _0343_ _0344_ VGND 
++ VGND
++ VPWR VPWR _0345_ sky130_fd_sc_hd__o221ai_1
+X_0803_ _0183_ \Dead_Time_Generator_inst_2.count_dt\[3] _0341_ _0345_ VGND VGND 
++ VPWR
++ VPWR _0346_ sky130_fd_sc_hd__a22oi_1
+X_0804_ _0182_ \Dead_Time_Generator_inst_2.count_dt\[4] \Dead_Time_Generator_inst_2.count_dt\[3] _0183_ VGND VGND 
++ VPWR
++ VPWR _0347_ sky130_fd_sc_hd__o22ai_1
+X_0805_ _0346_ _0347_ _0340_ VGND VGND VPWR 
++ VPWR
++ _0348_ sky130_fd_sc_hd__o21ai_0
+X_0806_ _0346_ _0347_ \Dead_Time_Generator_inst_2.count_dt\[0] _0340_ VGND VGND 
++ VPWR
++ VPWR _0349_ sky130_fd_sc_hd__o211ai_1
+X_0807_ \Dead_Time_Generator_inst_2.count_dt\[0] _0348_ VGND VGND VPWR VPWR 
++ _0350_
++ sky130_fd_sc_hd__xor2_1
+X_0808_ _0306_ _0339_ _0350_ VGND VGND VPWR 
++ VPWR
++ _0091_ sky130_fd_sc_hd__a21oi_1
+X_0809_ _0346_ _0347_ \Dead_Time_Generator_inst_2.count_dt\[1] \Dead_Time_Generator_inst_2.count_dt\[0] _0340_ VGND 
++ VGND
++ VPWR VPWR _0351_ sky130_fd_sc_hd__o2111a_1
+X_0810_ \Dead_Time_Generator_inst_2.count_dt\[1] _0349_ VGND VGND VPWR VPWR 
++ _0352_
++ sky130_fd_sc_hd__xor2_1
+X_0811_ _0306_ _0339_ _0352_ VGND VGND VPWR 
++ VPWR
++ _0092_ sky130_fd_sc_hd__a21oi_1
+X_0812_ \Dead_Time_Generator_inst_2.count_dt\[2] _0351_ VGND VGND VPWR VPWR 
++ _0353_
++ sky130_fd_sc_hd__xnor2_1
+X_0813_ _0306_ _0339_ _0353_ VGND VGND VPWR 
++ VPWR
++ _0093_ sky130_fd_sc_hd__a21oi_1
+X_0814_ \Dead_Time_Generator_inst_2.count_dt\[2] _0351_ \Dead_Time_Generator_inst_2.count_dt\[3] VGND VGND VPWR 
++ VPWR
++ _0354_ sky130_fd_sc_hd__a21oi_1
+X_0815_ \Dead_Time_Generator_inst_2.count_dt\[3] \Dead_Time_Generator_inst_2.count_dt\[2] _0351_ VGND VGND VPWR 
++ VPWR
++ _0355_ sky130_fd_sc_hd__and3_1
+X_0816_ _0306_ _0339_ _0354_ _0355_ VGND VGND 
++ VPWR
++ VPWR _0094_ sky130_fd_sc_hd__a211oi_1
+X_0817_ _0305_ _0338_ _0355_ \Dead_Time_Generator_inst_2.count_dt\[4] VGND VGND 
++ VPWR
++ VPWR _0095_ sky130_fd_sc_hd__o22a_1
+X_0818_ _0242_ _0269_ _0295_ VGND VGND VPWR 
++ VPWR
++ _0096_ sky130_fd_sc_hd__nor3_1
+X_0819_ \Shift_Register_Inst.internal_data[4]\[0] _0185_ VGND VGND VPWR VPWR 
++ _0356_
++ sky130_fd_sc_hd__nor2_1
+X_0820_ _0184_ \Dead_Time_Generator_inst_1.count_dt\[2] VGND VGND VPWR VPWR 
++ _0357_
++ sky130_fd_sc_hd__nor2_1
+X_0821_ \Dead_Time_Generator_inst_1.count_dt\[0] \Shift_Register_Inst.internal_data[0]\[0] VGND VGND VPWR VPWR 
++ _0358_
++ sky130_fd_sc_hd__nand2b_1
+X_0822_ \Dead_Time_Generator_inst_1.count_dt\[1] \Shift_Register_Inst.internal_data[1]\[0] VGND VGND VPWR VPWR 
++ _0359_
++ sky130_fd_sc_hd__nand2b_1
+X_0823_ \Dead_Time_Generator_inst_1.count_dt\[1] \Shift_Register_Inst.internal_data[1]\[0] VGND VGND VPWR VPWR 
++ _0360_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0824_ _0184_ \Dead_Time_Generator_inst_1.count_dt\[2] _0358_ _0359_ _0360_ VGND 
++ VGND
++ VPWR VPWR _0361_ sky130_fd_sc_hd__a221oi_1
+X_0825_ \Shift_Register_Inst.internal_data[3]\[0] _0186_ _0357_ _0361_ VGND VGND 
++ VPWR
++ VPWR _0362_ sky130_fd_sc_hd__o22ai_1
+X_0826_ \Shift_Register_Inst.internal_data[4]\[0] _0185_ _0186_ \Shift_Register_Inst.internal_data[3]\[0] VGND VGND 
++ VPWR
++ VPWR _0363_ sky130_fd_sc_hd__a22oi_1
+X_0827_ _0362_ _0363_ _0356_ VGND VGND VPWR 
++ VPWR
++ _0364_ sky130_fd_sc_hd__a21oi_1
+X_0828_ \Dead_Time_Generator_inst_1.count_dt\[0] _0364_ VGND VGND VPWR VPWR 
++ _0365_
++ sky130_fd_sc_hd__xnor2_1
+X_0829_ _0305_ _0338_ _0365_ VGND VGND VPWR 
++ VPWR
++ _0097_ sky130_fd_sc_hd__nor3_1
+X_0830_ \Dead_Time_Generator_inst_1.count_dt\[0] _0364_ \Dead_Time_Generator_inst_1.count_dt\[1] VGND VGND VPWR 
++ VPWR
++ _0366_ sky130_fd_sc_hd__a21oi_1
+X_0831_ _0362_ _0363_ _0187_ _0188_ _0356_ VGND 
++ VGND
++ VPWR VPWR _0367_ sky130_fd_sc_hd__a2111oi_0
+X_0832_ _0305_ _0338_ _0366_ _0367_ VGND VGND 
++ VPWR
++ VPWR _0098_ sky130_fd_sc_hd__nor4_1
+X_0833_ \Dead_Time_Generator_inst_1.count_dt\[2] _0367_ VGND VGND VPWR VPWR 
++ _0368_
++ sky130_fd_sc_hd__xnor2_1
+X_0834_ _0305_ _0338_ _0368_ VGND VGND VPWR 
++ VPWR
++ _0099_ sky130_fd_sc_hd__nor3_1
+X_0835_ \Dead_Time_Generator_inst_1.count_dt\[3] \Dead_Time_Generator_inst_1.count_dt\[2] _0367_ VGND VGND VPWR 
++ VPWR
++ _0369_ sky130_fd_sc_hd__nand3_1
+X_0836_ \Dead_Time_Generator_inst_1.count_dt\[2] _0367_ \Dead_Time_Generator_inst_1.count_dt\[3] VGND VGND VPWR 
++ VPWR
++ _0370_ sky130_fd_sc_hd__a21o_1
+X_0837_ _0306_ _0339_ _0369_ _0370_ VGND VGND 
++ VPWR
++ VPWR _0100_ sky130_fd_sc_hd__and4_1
+X_0838_ _0185_ _0369_ _0338_ _0305_ VGND VGND 
++ VPWR
++ VPWR _0101_ sky130_fd_sc_hd__a211oi_1
+X_0839_ _0306_ _0339_ _0348_ VGND VGND VPWR 
++ VPWR
++ _0102_ sky130_fd_sc_hd__a21boi_0
+X_0840_ _0305_ _0338_ _0364_ VGND VGND VPWR 
++ VPWR
++ _0103_ sky130_fd_sc_hd__nor3_1
+X_0841_ d1[4] \Shift_Register_Inst.internal_data[16]\[0] VGND VGND VPWR VPWR 
++ PMOS_PS3
++ sky130_fd_sc_hd__nand2b_1
+X_0842_ \Shift_Register_Inst.internal_data[16]\[0] d1[5] VGND VGND VPWR VPWR 
++ _0371_
++ sky130_fd_sc_hd__nand2_1
+X_0843_ _0371_ VGND VGND VPWR VPWR NMOS_PS3 sky130_fd_sc_hd__clkinv_1
+X_0844_ CLK_PLL CLK_EXT \Shift_Register_Inst.internal_data[14]\[0] VGND VGND VPWR 
++ VPWR
++ \Dead_Time_Generator_inst_1.clk\ sky130_fd_sc_hd__mux2_1
+X_0845_ \Signal_Generator_2_90phase_inst.count\[0] \Signal_Generator_2_90phase_inst.count\[1] VGND VGND VPWR VPWR 
++ _0372_
++ sky130_fd_sc_hd__xor2_1
+X_0846_ \Signal_Generator_2_90phase_inst.count\[0] \Signal_Generator_2_90phase_inst.count\[1] \Signal_Generator_2_90phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0373_ sky130_fd_sc_hd__nand3_1
+X_0847_ _0196_ _0373_ VGND VGND VPWR VPWR 
++ _0374_
++ sky130_fd_sc_hd__nor2_1
+X_0848_ \Signal_Generator_2_90phase_inst.count\[4] \Signal_Generator_2_90phase_inst.count\[5] _0374_ VGND VGND VPWR 
++ VPWR
++ _0375_ sky130_fd_sc_hd__and3_1
+X_0849_ \Signal_Generator_2_90phase_inst.direction\ _0375_ VGND VGND VPWR VPWR 
++ _0376_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0850_ \Signal_Generator_2_90phase_inst.count\[0] \Signal_Generator_2_90phase_inst.count\[1] \Signal_Generator_2_90phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0377_ sky130_fd_sc_hd__or3_1
+X_0851_ \Signal_Generator_2_90phase_inst.count\[0] \Signal_Generator_2_90phase_inst.count\[1] \Signal_Generator_2_90phase_inst.count\[3] \Signal_Generator_2_90phase_inst.count\[2] VGND VGND 
++ VPWR
++ VPWR _0378_ sky130_fd_sc_hd__nor4_1
+X_0852_ _0195_ _0378_ VGND VGND VPWR VPWR 
++ _0379_
++ sky130_fd_sc_hd__nand2_1
+X_0853_ \Signal_Generator_2_90phase_inst.count\[5] _0379_ VGND VGND VPWR VPWR 
++ _0380_
++ sky130_fd_sc_hd__nor2_1
+X_0854_ _0376_ _0380_ VGND VGND VPWR VPWR 
++ _0181_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_0855_ _0372_ _0375_ \Signal_Generator_2_90phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0381_ sky130_fd_sc_hd__o21ai_0
+X_0856_ _0372_ _0181_ _0381_ VGND VGND VPWR 
++ VPWR
++ _0176_ sky130_fd_sc_hd__o21ai_0
+X_0857_ \Signal_Generator_2_90phase_inst.count\[0] \Signal_Generator_2_90phase_inst.count\[1] \Signal_Generator_2_90phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0382_ sky130_fd_sc_hd__a21o_1
+X_0858_ _0373_ _0382_ VGND VGND VPWR VPWR 
++ _0383_
++ sky130_fd_sc_hd__nand2_1
+X_0859_ \Signal_Generator_2_90phase_inst.count\[0] \Signal_Generator_2_90phase_inst.count\[1] \Signal_Generator_2_90phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0384_ sky130_fd_sc_hd__o21ai_0
+X_0860_ _0377_ _0384_ _0380_ VGND VGND VPWR 
++ VPWR
++ _0385_ sky130_fd_sc_hd__a21oi_1
+X_0861_ \Signal_Generator_2_90phase_inst.direction\ _0385_ VGND VGND VPWR VPWR 
++ _0386_
++ sky130_fd_sc_hd__nor2_1
+X_0862_ _0376_ _0383_ _0386_ VGND VGND VPWR 
++ VPWR
++ _0177_ sky130_fd_sc_hd__a21oi_1
+X_0863_ _0196_ _0373_ VGND VGND VPWR VPWR 
++ _0387_
++ sky130_fd_sc_hd__xnor2_1
+X_0864_ _0196_ _0377_ VGND VGND VPWR VPWR 
++ _0388_
++ sky130_fd_sc_hd__xnor2_1
+X_0865_ _0380_ _0388_ VGND VGND VPWR VPWR 
++ _0389_
++ sky130_fd_sc_hd__nor2_1
+X_0866_ \Signal_Generator_2_90phase_inst.direction\ _0389_ VGND VGND VPWR VPWR 
++ _0390_
++ sky130_fd_sc_hd__nor2_1
+X_0867_ _0376_ _0387_ _0390_ VGND VGND VPWR 
++ VPWR
++ _0178_ sky130_fd_sc_hd__a21oi_1
+X_0868_ \Signal_Generator_2_90phase_inst.count\[4] \Signal_Generator_2_90phase_inst.direction\ _0374_ VGND VGND VPWR 
++ VPWR
++ _0391_ sky130_fd_sc_hd__nand3_1
+X_0869_ \Signal_Generator_2_90phase_inst.count\[4] _0374_ \Signal_Generator_2_90phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0392_ sky130_fd_sc_hd__o21ai_0
+X_0870_ _0195_ _0378_ _0392_ VGND VGND VPWR 
++ VPWR
++ _0393_ sky130_fd_sc_hd__o21ai_0
+X_0871_ \Signal_Generator_2_90phase_inst.count\[5] _0391_ _0393_ VGND VGND VPWR 
++ VPWR
++ _0394_ sky130_fd_sc_hd__o21ai_0
+X_0872_ \Signal_Generator_2_90phase_inst.direction\ \Signal_Generator_2_90phase_inst.count\[5] VGND VGND VPWR VPWR 
++ _0395_
++ sky130_fd_sc_hd__nand2b_1
+X_0873_ _0379_ _0395_ _0394_ VGND VGND VPWR 
++ VPWR
++ _0179_ sky130_fd_sc_hd__o21ai_0
+X_0874_ \Signal_Generator_2_90phase_inst.direction\ _0379_ \Signal_Generator_2_90phase_inst.count\[5] VGND VGND VPWR 
++ VPWR
++ _0396_ sky130_fd_sc_hd__o21ai_0
+X_0875_ _0391_ _0396_ VGND VGND VPWR VPWR 
++ _0180_
++ sky130_fd_sc_hd__nand2_1
+X_0876_ \Shift_Register_Inst.internal_data[16]\[0] \Shift_Register_Inst.internal_data[15]\[0] \Shift_Register_Inst.internal_data[17]\[0] VGND VGND VPWR 
++ VPWR
++ _0397_ sky130_fd_sc_hd__and3b_1
+X_0877_ \Shift_Register_Inst.internal_data[16]\[0] \Shift_Register_Inst.internal_data[15]\[0] \Shift_Register_Inst.internal_data[17]\[0] VGND VGND VPWR 
++ VPWR
++ _0398_ sky130_fd_sc_hd__nand3b_1
+X_0878_ \Shift_Register_Inst.internal_data[13]\[0] \Dead_Time_Generator_inst_1.go\ VGND VGND VPWR VPWR 
++ _0399_
++ sky130_fd_sc_hd__nor2_1
+X_0879_ \Shift_Register_Inst.internal_data[13]\[0] d1[3] _0399_ VGND VGND VPWR 
++ VPWR
++ _0400_ sky130_fd_sc_hd__a21oi_1
+X_0880_ _0397_ _0400_ VGND VGND VPWR VPWR 
++ PMOS1_PS1
++ sky130_fd_sc_hd__nand2_1
+X_0881_ \Dead_Time_Generator_inst_2.go\ d1[0] \Shift_Register_Inst.internal_data[13]\[0] VGND VGND VPWR 
++ VPWR
++ _0401_ sky130_fd_sc_hd__mux2i_1
+X_0882_ _0398_ _0401_ VGND VGND VPWR VPWR 
++ NMOS2_PS1
++ sky130_fd_sc_hd__nor2_1
+X_0883_ \Shift_Register_Inst.internal_data[13]\[0] \Dead_Time_Generator_inst_3.go\ VGND VGND VPWR VPWR 
++ _0402_
++ sky130_fd_sc_hd__nor2_1
+X_0884_ \Shift_Register_Inst.internal_data[13]\[0] d1[1] _0402_ VGND VGND VPWR 
++ VPWR
++ _0403_ sky130_fd_sc_hd__a21oi_1
+X_0885_ _0397_ _0403_ VGND VGND VPWR VPWR 
++ PMOS2_PS1
++ sky130_fd_sc_hd__nand2_1
+X_0886_ \Dead_Time_Generator_inst_4.go\ d1[2] \Shift_Register_Inst.internal_data[13]\[0] VGND VGND VPWR 
++ VPWR
++ _0404_ sky130_fd_sc_hd__mux2i_1
+X_0887_ _0398_ _0404_ VGND VGND VPWR VPWR 
++ NMOS1_PS1
++ sky130_fd_sc_hd__nor2_1
+X_0888_ \Shift_Register_Inst.internal_data[16]\[0] \Shift_Register_Inst.internal_data[15]\[0] \Shift_Register_Inst.internal_data[17]\[0] VGND VGND VPWR 
++ VPWR
++ _0405_ sky130_fd_sc_hd__nor3b_1
+X_0889_ \Shift_Register_Inst.internal_data[16]\[0] \Shift_Register_Inst.internal_data[15]\[0] \Shift_Register_Inst.internal_data[17]\[0] VGND VGND VPWR 
++ VPWR
++ _0406_ sky130_fd_sc_hd__or3b_1
+X_0890_ _0400_ _0405_ VGND VGND VPWR VPWR 
++ PMOS1_PS2
++ sky130_fd_sc_hd__nand2_1
+X_0891_ _0401_ _0406_ VGND VGND VPWR VPWR 
++ NMOS2_PS2
++ sky130_fd_sc_hd__nor2_1
+X_0892_ _0403_ _0405_ VGND VGND VPWR VPWR 
++ PMOS2_PS2
++ sky130_fd_sc_hd__nand2_1
+X_0893_ _0404_ _0406_ VGND VGND VPWR VPWR 
++ NMOS1_PS2
++ sky130_fd_sc_hd__nor2_1
+X_0894_ \Signal_Generator_2_180phase_inst.count\[1] \Signal_Generator_2_180phase_inst.count\[0] VGND VGND VPWR VPWR 
++ _0407_
++ sky130_fd_sc_hd__xnor2_1
+X_0895_ \Signal_Generator_2_180phase_inst.count\[1] \Signal_Generator_2_180phase_inst.count\[0] \Signal_Generator_2_180phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0408_ sky130_fd_sc_hd__or3_1
+X_0896_ \Signal_Generator_2_180phase_inst.count\[3] _0408_ VGND VGND VPWR VPWR 
++ _0409_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_0897_ \Signal_Generator_2_180phase_inst.count\[4] \Signal_Generator_2_180phase_inst.count\[5] _0409_ VGND VGND VPWR 
++ VPWR
++ _0410_ sky130_fd_sc_hd__nor3_1
+X_0898_ \Signal_Generator_2_180phase_inst.count\[1] \Signal_Generator_2_180phase_inst.count\[0] \Signal_Generator_2_180phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0411_ sky130_fd_sc_hd__nand3_1
+X_0899_ \Signal_Generator_2_180phase_inst.count\[1] \Signal_Generator_2_180phase_inst.count\[3] \Signal_Generator_2_180phase_inst.count\[0] \Signal_Generator_2_180phase_inst.count\[2] VGND VGND 
++ VPWR
++ VPWR _0412_ sky130_fd_sc_hd__nand4_1
+X_0900_ \Signal_Generator_2_180phase_inst.count\[4] _0412_ VGND VGND VPWR VPWR 
++ _0413_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0901_ _0413_ VGND VGND VPWR VPWR _0414_ sky130_fd_sc_hd__clkinv_1
+X_0902_ \Signal_Generator_2_180phase_inst.count\[5] _0413_ \Signal_Generator_2_180phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0415_ sky130_fd_sc_hd__a21boi_0
+X_0903_ _0410_ _0415_ VGND VGND VPWR VPWR 
++ _0167_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_0904_ \Signal_Generator_2_180phase_inst.direction\ _0407_ VGND VGND VPWR VPWR 
++ _0416_
++ sky130_fd_sc_hd__nor2_1
+X_0905_ _0407_ _0167_ _0416_ VGND VGND VPWR 
++ VPWR
++ _0162_ sky130_fd_sc_hd__a21oi_1
+X_0906_ \Signal_Generator_2_180phase_inst.count\[1] \Signal_Generator_2_180phase_inst.count\[0] \Signal_Generator_2_180phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0417_ sky130_fd_sc_hd__a21o_1
+X_0907_ _0411_ _0417_ VGND VGND VPWR VPWR 
++ _0418_
++ sky130_fd_sc_hd__nand2_1
+X_0908_ \Signal_Generator_2_180phase_inst.count\[1] \Signal_Generator_2_180phase_inst.count\[0] \Signal_Generator_2_180phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0419_ sky130_fd_sc_hd__o21ai_0
+X_0909_ _0408_ _0419_ _0410_ VGND VGND VPWR 
++ VPWR
++ _0420_ sky130_fd_sc_hd__a21oi_1
+X_0910_ \Signal_Generator_2_180phase_inst.direction\ _0420_ VGND VGND VPWR VPWR 
++ _0421_
++ sky130_fd_sc_hd__nor2_1
+X_0911_ _0415_ _0418_ _0421_ VGND VGND VPWR 
++ VPWR
++ _0163_ sky130_fd_sc_hd__a21oi_1
+X_0912_ _0197_ _0411_ VGND VGND VPWR VPWR 
++ _0422_
++ sky130_fd_sc_hd__nand2_1
+X_0913_ _0412_ _0422_ VGND VGND VPWR VPWR 
++ _0423_
++ sky130_fd_sc_hd__nand2_1
+X_0914_ \Signal_Generator_2_180phase_inst.count\[3] _0408_ VGND VGND VPWR VPWR 
++ _0424_
++ sky130_fd_sc_hd__nand2_1
+X_0915_ _0409_ _0424_ _0410_ VGND VGND VPWR 
++ VPWR
++ _0425_ sky130_fd_sc_hd__a21oi_1
+X_0916_ \Signal_Generator_2_180phase_inst.direction\ _0425_ VGND VGND VPWR VPWR 
++ _0426_
++ sky130_fd_sc_hd__nor2_1
+X_0917_ _0415_ _0423_ _0426_ VGND VGND VPWR 
++ VPWR
++ _0164_ sky130_fd_sc_hd__a21oi_1
+X_0918_ \Signal_Generator_2_180phase_inst.count\[4] _0409_ VGND VGND VPWR VPWR 
++ _0427_
++ sky130_fd_sc_hd__xor2_1
+X_0919_ \Signal_Generator_2_180phase_inst.count\[4] _0412_ VGND VGND VPWR VPWR 
++ _0428_
++ sky130_fd_sc_hd__nor2b_1
+X_0920_ \Signal_Generator_2_180phase_inst.count\[5] _0414_ \Signal_Generator_2_180phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0429_ sky130_fd_sc_hd__o21ai_0
+X_0921_ \Signal_Generator_2_180phase_inst.direction\ _0410_ _0427_ _0428_ _0429_ VGND 
++ VGND
++ VPWR VPWR _0165_ sky130_fd_sc_hd__o32ai_1
+X_0922_ \Signal_Generator_2_180phase_inst.count\[4] _0409_ \Signal_Generator_2_180phase_inst.count\[5] VGND VGND VPWR 
++ VPWR
++ _0430_ sky130_fd_sc_hd__o21ai_0
+X_0923_ \Signal_Generator_2_180phase_inst.count\[5] _0413_ \Signal_Generator_2_180phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0431_ sky130_fd_sc_hd__o21ai_0
+X_0924_ _0430_ _0431_ VGND VGND VPWR VPWR 
++ _0166_
++ sky130_fd_sc_hd__nand2_1
+X_0925_ \Signal_Generator_2_270phase_inst.count\[1] \Signal_Generator_2_270phase_inst.count\[0] \Signal_Generator_2_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0432_ sky130_fd_sc_hd__or3_1
+X_0926_ \Signal_Generator_2_270phase_inst.count\[1] \Signal_Generator_2_270phase_inst.count\[0] \Signal_Generator_2_270phase_inst.count\[2] \Signal_Generator_2_270phase_inst.count\[3] VGND VGND 
++ VPWR
++ VPWR _0433_ sky130_fd_sc_hd__nor4_1
+X_0927_ \Signal_Generator_2_270phase_inst.count\[4] _0433_ VGND VGND VPWR VPWR 
++ _0434_
++ sky130_fd_sc_hd__nand2b_1
+X_0928_ \Signal_Generator_2_270phase_inst.count\[5] _0434_ VGND VGND VPWR VPWR 
++ _0435_
++ sky130_fd_sc_hd__nor2_1
+X_0929_ \Signal_Generator_2_270phase_inst.count\[1] \Signal_Generator_2_270phase_inst.count\[0] \Signal_Generator_2_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0436_ sky130_fd_sc_hd__nand3_1
+X_0930_ _0198_ _0436_ VGND VGND VPWR VPWR 
++ _0437_
++ sky130_fd_sc_hd__nor2_1
+X_0931_ \Signal_Generator_2_270phase_inst.count\[4] _0437_ VGND VGND VPWR VPWR 
++ _0438_
++ sky130_fd_sc_hd__and2_0
+X_0932_ \Signal_Generator_2_270phase_inst.count\[4] _0437_ VGND VGND VPWR VPWR 
++ _0439_
++ sky130_fd_sc_hd__nand2_1
+X_0933_ \Signal_Generator_2_270phase_inst.count\[5] _0438_ \Signal_Generator_2_270phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0440_ sky130_fd_sc_hd__a21boi_0
+X_0934_ _0435_ _0440_ VGND VGND VPWR VPWR 
++ _0174_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_0935_ \Signal_Generator_2_270phase_inst.count\[1] \Signal_Generator_2_270phase_inst.count\[0] VGND VGND VPWR VPWR 
++ _0441_
++ sky130_fd_sc_hd__xor2_1
+X_0936_ \Signal_Generator_2_270phase_inst.direction\ _0441_ VGND VGND VPWR VPWR 
++ _0442_
++ sky130_fd_sc_hd__nand2_1
+X_0937_ _0174_ _0441_ _0442_ VGND VGND VPWR 
++ VPWR
++ _0169_ sky130_fd_sc_hd__o21ai_0
+X_0938_ \Signal_Generator_2_270phase_inst.count\[1] \Signal_Generator_2_270phase_inst.count\[0] \Signal_Generator_2_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0443_ sky130_fd_sc_hd__a21o_1
+X_0939_ _0436_ _0443_ VGND VGND VPWR VPWR 
++ _0444_
++ sky130_fd_sc_hd__nand2_1
+X_0940_ \Signal_Generator_2_270phase_inst.count\[1] \Signal_Generator_2_270phase_inst.count\[0] \Signal_Generator_2_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0445_ sky130_fd_sc_hd__o21ai_0
+X_0941_ _0432_ _0445_ _0435_ VGND VGND VPWR 
++ VPWR
++ _0446_ sky130_fd_sc_hd__a21oi_1
+X_0942_ \Signal_Generator_2_270phase_inst.direction\ _0446_ VGND VGND VPWR VPWR 
++ _0447_
++ sky130_fd_sc_hd__nor2_1
+X_0943_ _0440_ _0444_ _0447_ VGND VGND VPWR 
++ VPWR
++ _0170_ sky130_fd_sc_hd__a21oi_1
+X_0944_ _0198_ _0436_ VGND VGND VPWR VPWR 
++ _0448_
++ sky130_fd_sc_hd__xnor2_1
+X_0945_ _0198_ _0432_ VGND VGND VPWR VPWR 
++ _0449_
++ sky130_fd_sc_hd__xnor2_1
+X_0946_ _0435_ _0449_ VGND VGND VPWR VPWR 
++ _0450_
++ sky130_fd_sc_hd__nor2_1
+X_0947_ \Signal_Generator_2_270phase_inst.direction\ _0450_ VGND VGND VPWR VPWR 
++ _0451_
++ sky130_fd_sc_hd__nor2_1
+X_0948_ _0440_ _0448_ _0451_ VGND VGND VPWR 
++ VPWR
++ _0171_ sky130_fd_sc_hd__a21oi_1
+X_0949_ \Signal_Generator_2_270phase_inst.count\[4] _0433_ VGND VGND VPWR VPWR 
++ _0452_
++ sky130_fd_sc_hd__xnor2_1
+X_0950_ \Signal_Generator_2_270phase_inst.count\[4] _0437_ VGND VGND VPWR VPWR 
++ _0453_
++ sky130_fd_sc_hd__nor2_1
+X_0951_ \Signal_Generator_2_270phase_inst.count\[5] _0439_ \Signal_Generator_2_270phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0454_ sky130_fd_sc_hd__o21ai_0
+X_0952_ \Signal_Generator_2_270phase_inst.direction\ _0435_ _0452_ _0453_ _0454_ VGND 
++ VGND
++ VPWR VPWR _0172_ sky130_fd_sc_hd__o32ai_1
+X_0953_ \Signal_Generator_2_270phase_inst.count\[5] _0438_ VGND VGND VPWR VPWR 
++ _0455_
++ sky130_fd_sc_hd__nor2_1
+X_0954_ \Signal_Generator_2_270phase_inst.count\[5] _0434_ \Signal_Generator_2_270phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0456_ sky130_fd_sc_hd__a21oi_1
+X_0955_ _0455_ _0456_ VGND VGND VPWR VPWR 
++ _0173_
++ sky130_fd_sc_hd__nor2_1
+X_0956_ \Signal_Generator_2_0phase_inst.count\[0] \Signal_Generator_2_0phase_inst.count\[1] VGND VGND VPWR VPWR 
++ _0457_
++ sky130_fd_sc_hd__xor2_1
+X_0957_ \Signal_Generator_2_0phase_inst.direction\ _0457_ VGND VGND VPWR VPWR 
++ _0458_
++ sky130_fd_sc_hd__nand2_1
+X_0958_ \Signal_Generator_2_0phase_inst.count\[0] \Signal_Generator_2_0phase_inst.count\[2] \Signal_Generator_2_0phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0459_ sky130_fd_sc_hd__or3_1
+X_0959_ \Signal_Generator_2_0phase_inst.count\[3] _0459_ VGND VGND VPWR VPWR 
++ _0460_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_0960_ \Signal_Generator_2_0phase_inst.count\[5] \Signal_Generator_2_0phase_inst.count\[4] _0460_ VGND VGND VPWR 
++ VPWR
++ _0461_ sky130_fd_sc_hd__nor3_1
+X_0961_ \Signal_Generator_2_0phase_inst.count\[0] \Signal_Generator_2_0phase_inst.count\[2] \Signal_Generator_2_0phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0462_ sky130_fd_sc_hd__nand3_1
+X_0962_ _0199_ _0462_ VGND VGND VPWR VPWR 
++ _0463_
++ sky130_fd_sc_hd__nor2_1
+X_0963_ \Signal_Generator_2_0phase_inst.count\[4] _0463_ VGND VGND VPWR VPWR 
++ _0464_
++ sky130_fd_sc_hd__and2_0
+X_0964_ \Signal_Generator_2_0phase_inst.count\[4] _0463_ VGND VGND VPWR VPWR 
++ _0465_
++ sky130_fd_sc_hd__nand2_1
+X_0965_ \Signal_Generator_2_0phase_inst.count\[5] _0464_ \Signal_Generator_2_0phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0466_ sky130_fd_sc_hd__a21boi_0
+X_0966_ _0461_ _0466_ VGND VGND VPWR VPWR 
++ _0160_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_0967_ _0457_ _0160_ _0458_ VGND VGND VPWR 
++ VPWR
++ _0155_ sky130_fd_sc_hd__o21ai_0
+X_0968_ \Signal_Generator_2_0phase_inst.count\[0] \Signal_Generator_2_0phase_inst.count\[1] \Signal_Generator_2_0phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0467_ sky130_fd_sc_hd__a21o_1
+X_0969_ _0462_ _0467_ VGND VGND VPWR VPWR 
++ _0468_
++ sky130_fd_sc_hd__nand2_1
+X_0970_ \Signal_Generator_2_0phase_inst.count\[0] \Signal_Generator_2_0phase_inst.count\[1] \Signal_Generator_2_0phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0469_ sky130_fd_sc_hd__o21ai_0
+X_0971_ _0459_ _0469_ _0461_ VGND VGND VPWR 
++ VPWR
++ _0470_ sky130_fd_sc_hd__a21oi_1
+X_0972_ \Signal_Generator_2_0phase_inst.direction\ _0470_ VGND VGND VPWR VPWR 
++ _0471_
++ sky130_fd_sc_hd__nor2_1
+X_0973_ _0466_ _0468_ _0471_ VGND VGND VPWR 
++ VPWR
++ _0156_ sky130_fd_sc_hd__a21oi_1
+X_0974_ _0199_ _0462_ VGND VGND VPWR VPWR 
++ _0472_
++ sky130_fd_sc_hd__xnor2_1
+X_0975_ \Signal_Generator_2_0phase_inst.count\[3] _0459_ VGND VGND VPWR VPWR 
++ _0473_
++ sky130_fd_sc_hd__nand2_1
+X_0976_ _0460_ _0473_ _0461_ VGND VGND VPWR 
++ VPWR
++ _0474_ sky130_fd_sc_hd__a21oi_1
+X_0977_ \Signal_Generator_2_0phase_inst.direction\ _0474_ VGND VGND VPWR VPWR 
++ _0475_
++ sky130_fd_sc_hd__nor2_1
+X_0978_ _0466_ _0472_ _0475_ VGND VGND VPWR 
++ VPWR
++ _0157_ sky130_fd_sc_hd__a21oi_1
+X_0979_ \Signal_Generator_2_0phase_inst.count\[4] _0460_ VGND VGND VPWR VPWR 
++ _0476_
++ sky130_fd_sc_hd__xor2_1
+X_0980_ \Signal_Generator_2_0phase_inst.count\[4] _0463_ VGND VGND VPWR VPWR 
++ _0477_
++ sky130_fd_sc_hd__nor2_1
+X_0981_ \Signal_Generator_2_0phase_inst.count\[5] _0465_ \Signal_Generator_2_0phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0478_ sky130_fd_sc_hd__o21ai_0
+X_0982_ \Signal_Generator_2_0phase_inst.direction\ _0461_ _0476_ _0477_ _0478_ VGND 
++ VGND
++ VPWR VPWR _0158_ sky130_fd_sc_hd__o32ai_1
+X_0983_ \Signal_Generator_2_0phase_inst.count\[4] _0460_ \Signal_Generator_2_0phase_inst.count\[5] VGND VGND VPWR 
++ VPWR
++ _0479_ sky130_fd_sc_hd__o21ai_0
+X_0984_ \Signal_Generator_2_0phase_inst.count\[5] _0464_ \Signal_Generator_2_0phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0480_ sky130_fd_sc_hd__o21ai_0
+X_0985_ _0479_ _0480_ VGND VGND VPWR VPWR 
++ _0159_
++ sky130_fd_sc_hd__nand2_1
+X_0986_ \Signal_Generator_1_270phase_inst.count\[1] \Signal_Generator_1_270phase_inst.count\[0] VGND VGND VPWR VPWR 
++ _0481_
++ sky130_fd_sc_hd__xor2_1
+X_0987_ \Signal_Generator_1_270phase_inst.direction\ _0481_ VGND VGND VPWR VPWR 
++ _0482_
++ sky130_fd_sc_hd__nand2_1
+X_0988_ \Signal_Generator_1_270phase_inst.count\[1] \Signal_Generator_1_270phase_inst.count\[0] \Signal_Generator_1_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0483_ sky130_fd_sc_hd__or3_1
+X_0989_ \Signal_Generator_1_270phase_inst.count\[3] _0483_ VGND VGND VPWR VPWR 
++ _0484_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_0990_ \Signal_Generator_1_270phase_inst.count\[4] \Signal_Generator_1_270phase_inst.count\[5] _0484_ VGND VGND VPWR 
++ VPWR
++ _0485_ sky130_fd_sc_hd__nor3_1
+X_0991_ \Signal_Generator_1_270phase_inst.count\[1] \Signal_Generator_1_270phase_inst.count\[0] \Signal_Generator_1_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0486_ sky130_fd_sc_hd__nand3_1
+X_0992_ \Signal_Generator_1_270phase_inst.count\[3] _0486_ VGND VGND VPWR VPWR 
++ _0487_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_0993_ \Signal_Generator_1_270phase_inst.count\[4] _0487_ VGND VGND VPWR VPWR 
++ _0488_
++ sky130_fd_sc_hd__and2_0
+X_0994_ \Signal_Generator_1_270phase_inst.count\[4] _0487_ VGND VGND VPWR VPWR 
++ _0489_
++ sky130_fd_sc_hd__nand2_1
+X_0995_ \Signal_Generator_1_270phase_inst.count\[5] _0488_ \Signal_Generator_1_270phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0490_ sky130_fd_sc_hd__a21boi_0
+X_0996_ _0485_ _0490_ VGND VGND VPWR VPWR 
++ _0146_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_0997_ _0481_ _0146_ _0482_ VGND VGND VPWR 
++ VPWR
++ _0141_ sky130_fd_sc_hd__o21ai_0
+X_0998_ \Signal_Generator_1_270phase_inst.count\[1] \Signal_Generator_1_270phase_inst.count\[0] \Signal_Generator_1_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0491_ sky130_fd_sc_hd__a21o_1
+X_0999_ _0486_ _0491_ VGND VGND VPWR VPWR 
++ _0492_
++ sky130_fd_sc_hd__nand2_1
+X_1000_ \Signal_Generator_1_270phase_inst.count\[1] \Signal_Generator_1_270phase_inst.count\[0] \Signal_Generator_1_270phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0493_ sky130_fd_sc_hd__o21ai_0
+X_1001_ _0483_ _0493_ _0485_ VGND VGND VPWR 
++ VPWR
++ _0494_ sky130_fd_sc_hd__a21oi_1
+X_1002_ \Signal_Generator_1_270phase_inst.direction\ _0494_ VGND VGND VPWR VPWR 
++ _0495_
++ sky130_fd_sc_hd__nor2_1
+X_1003_ _0490_ _0492_ _0495_ VGND VGND VPWR 
++ VPWR
++ _0142_ sky130_fd_sc_hd__a21oi_1
+X_1004_ \Signal_Generator_1_270phase_inst.count\[3] _0486_ VGND VGND VPWR VPWR 
++ _0496_
++ sky130_fd_sc_hd__xor2_1
+X_1005_ \Signal_Generator_1_270phase_inst.count\[3] _0483_ VGND VGND VPWR VPWR 
++ _0497_
++ sky130_fd_sc_hd__nand2_1
+X_1006_ _0484_ _0497_ _0485_ VGND VGND VPWR 
++ VPWR
++ _0498_ sky130_fd_sc_hd__a21oi_1
+X_1007_ \Signal_Generator_1_270phase_inst.direction\ _0498_ VGND VGND VPWR VPWR 
++ _0499_
++ sky130_fd_sc_hd__nor2_1
+X_1008_ _0490_ _0496_ _0499_ VGND VGND VPWR 
++ VPWR
++ _0143_ sky130_fd_sc_hd__a21oi_1
+X_1009_ \Signal_Generator_1_270phase_inst.count\[4] _0484_ VGND VGND VPWR VPWR 
++ _0500_
++ sky130_fd_sc_hd__xor2_1
+X_1010_ \Signal_Generator_1_270phase_inst.count\[4] _0487_ VGND VGND VPWR VPWR 
++ _0501_
++ sky130_fd_sc_hd__nor2_1
+X_1011_ \Signal_Generator_1_270phase_inst.count\[5] _0489_ \Signal_Generator_1_270phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0502_ sky130_fd_sc_hd__o21ai_0
+X_1012_ \Signal_Generator_1_270phase_inst.direction\ _0485_ _0500_ _0501_ _0502_ VGND 
++ VGND
++ VPWR VPWR _0144_ sky130_fd_sc_hd__o32ai_1
+X_1013_ \Signal_Generator_1_270phase_inst.count\[4] _0484_ \Signal_Generator_1_270phase_inst.count\[5] VGND VGND VPWR 
++ VPWR
++ _0503_ sky130_fd_sc_hd__o21ai_0
+X_1014_ \Signal_Generator_1_270phase_inst.count\[5] _0488_ \Signal_Generator_1_270phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0504_ sky130_fd_sc_hd__o21ai_0
+X_1015_ _0503_ _0504_ VGND VGND VPWR VPWR 
++ _0145_
++ sky130_fd_sc_hd__nand2_1
+X_1016_ \Signal_Generator_1_180phase_inst.count\[1] \Signal_Generator_1_180phase_inst.count\[0] VGND VGND VPWR VPWR 
++ _0505_
++ sky130_fd_sc_hd__xor2_1
+X_1017_ \Signal_Generator_1_180phase_inst.direction\ _0505_ VGND VGND VPWR VPWR 
++ _0506_
++ sky130_fd_sc_hd__nand2_1
+X_1018_ \Signal_Generator_1_180phase_inst.count\[1] \Signal_Generator_1_180phase_inst.count\[2] \Signal_Generator_1_180phase_inst.count\[0] VGND VGND VPWR 
++ VPWR
++ _0507_ sky130_fd_sc_hd__or3_1
+X_1019_ \Signal_Generator_1_180phase_inst.count\[3] _0507_ VGND VGND VPWR VPWR 
++ _0508_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_1020_ \Signal_Generator_1_180phase_inst.count\[4] \Signal_Generator_1_180phase_inst.count\[5] _0508_ VGND VGND VPWR 
++ VPWR
++ _0509_ sky130_fd_sc_hd__nor3_1
+X_1021_ \Signal_Generator_1_180phase_inst.count\[1] \Signal_Generator_1_180phase_inst.count\[2] \Signal_Generator_1_180phase_inst.count\[0] VGND VGND VPWR 
++ VPWR
++ _0510_ sky130_fd_sc_hd__nand3_1
+X_1022_ \Signal_Generator_1_180phase_inst.count\[3] _0510_ VGND VGND VPWR VPWR 
++ _0511_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_1023_ \Signal_Generator_1_180phase_inst.count\[4] _0511_ VGND VGND VPWR VPWR 
++ _0512_
++ sky130_fd_sc_hd__and2_0
+X_1024_ \Signal_Generator_1_180phase_inst.count\[4] _0511_ VGND VGND VPWR VPWR 
++ _0513_
++ sky130_fd_sc_hd__nand2_1
+X_1025_ \Signal_Generator_1_180phase_inst.count\[5] _0512_ \Signal_Generator_1_180phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0514_ sky130_fd_sc_hd__a21boi_0
+X_1026_ _0509_ _0514_ VGND VGND VPWR VPWR 
++ _0139_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_1027_ _0505_ _0139_ _0506_ VGND VGND VPWR 
++ VPWR
++ _0134_ sky130_fd_sc_hd__o21ai_0
+X_1028_ \Signal_Generator_1_180phase_inst.count\[1] \Signal_Generator_1_180phase_inst.count\[0] \Signal_Generator_1_180phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0515_ sky130_fd_sc_hd__a21o_1
+X_1029_ _0510_ _0515_ VGND VGND VPWR VPWR 
++ _0516_
++ sky130_fd_sc_hd__nand2_1
+X_1030_ \Signal_Generator_1_180phase_inst.count\[1] \Signal_Generator_1_180phase_inst.count\[0] \Signal_Generator_1_180phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0517_ sky130_fd_sc_hd__o21ai_0
+X_1031_ _0507_ _0517_ _0509_ VGND VGND VPWR 
++ VPWR
++ _0518_ sky130_fd_sc_hd__a21oi_1
+X_1032_ \Signal_Generator_1_180phase_inst.direction\ _0518_ VGND VGND VPWR VPWR 
++ _0519_
++ sky130_fd_sc_hd__nor2_1
+X_1033_ _0514_ _0516_ _0519_ VGND VGND VPWR 
++ VPWR
++ _0135_ sky130_fd_sc_hd__a21oi_1
+X_1034_ \Signal_Generator_1_180phase_inst.count\[3] _0510_ VGND VGND VPWR VPWR 
++ _0520_
++ sky130_fd_sc_hd__xor2_1
+X_1035_ \Signal_Generator_1_180phase_inst.count\[3] _0507_ VGND VGND VPWR VPWR 
++ _0521_
++ sky130_fd_sc_hd__nand2_1
+X_1036_ _0508_ _0521_ _0509_ VGND VGND VPWR 
++ VPWR
++ _0522_ sky130_fd_sc_hd__a21oi_1
+X_1037_ \Signal_Generator_1_180phase_inst.direction\ _0522_ VGND VGND VPWR VPWR 
++ _0523_
++ sky130_fd_sc_hd__nor2_1
+X_1038_ _0514_ _0520_ _0523_ VGND VGND VPWR 
++ VPWR
++ _0136_ sky130_fd_sc_hd__a21oi_1
+X_1039_ \Signal_Generator_1_180phase_inst.count\[4] _0508_ VGND VGND VPWR VPWR 
++ _0524_
++ sky130_fd_sc_hd__xor2_1
+X_1040_ \Signal_Generator_1_180phase_inst.count\[4] _0511_ VGND VGND VPWR VPWR 
++ _0525_
++ sky130_fd_sc_hd__nor2_1
+X_1041_ \Signal_Generator_1_180phase_inst.count\[5] _0513_ \Signal_Generator_1_180phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0526_ sky130_fd_sc_hd__o21ai_0
+X_1042_ \Signal_Generator_1_180phase_inst.direction\ _0509_ _0524_ _0525_ _0526_ VGND 
++ VGND
++ VPWR VPWR _0137_ sky130_fd_sc_hd__o32ai_1
+X_1043_ \Signal_Generator_1_180phase_inst.count\[4] _0508_ \Signal_Generator_1_180phase_inst.count\[5] VGND VGND VPWR 
++ VPWR
++ _0527_ sky130_fd_sc_hd__o21ai_0
+X_1044_ \Signal_Generator_1_180phase_inst.count\[5] _0512_ \Signal_Generator_1_180phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0528_ sky130_fd_sc_hd__o21ai_0
+X_1045_ _0527_ _0528_ VGND VGND VPWR VPWR 
++ _0138_
++ sky130_fd_sc_hd__nand2_1
+X_1046_ \Signal_Generator_1_90phase_inst.count\[0] \Signal_Generator_1_90phase_inst.count\[1] VGND VGND VPWR VPWR 
++ _0529_
++ sky130_fd_sc_hd__xnor2_1
+X_1047_ \Signal_Generator_1_90phase_inst.count\[0] \Signal_Generator_1_90phase_inst.count\[2] \Signal_Generator_1_90phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0530_ sky130_fd_sc_hd__or3_1
+X_1048_ \Signal_Generator_1_90phase_inst.count\[3] _0530_ VGND VGND VPWR VPWR 
++ _0531_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_1049_ \Signal_Generator_1_90phase_inst.count\[4] \Signal_Generator_1_90phase_inst.count\[5] _0531_ VGND VGND VPWR 
++ VPWR
++ _0532_ sky130_fd_sc_hd__nor3_1
+X_1050_ \Signal_Generator_1_90phase_inst.count\[0] \Signal_Generator_1_90phase_inst.count\[2] \Signal_Generator_1_90phase_inst.count\[1] VGND VGND VPWR 
++ VPWR
++ _0533_ sky130_fd_sc_hd__nand3_1
+X_1051_ \Signal_Generator_1_90phase_inst.count\[3] _0533_ VGND VGND VPWR VPWR 
++ _0534_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_1052_ \Signal_Generator_1_90phase_inst.count\[4] _0534_ VGND VGND VPWR VPWR 
++ _0535_
++ sky130_fd_sc_hd__and2_0
+X_1053_ \Signal_Generator_1_90phase_inst.count\[4] _0534_ VGND VGND VPWR VPWR 
++ _0536_
++ sky130_fd_sc_hd__nand2_1
+X_1054_ \Signal_Generator_1_90phase_inst.count\[5] _0535_ \Signal_Generator_1_90phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0537_ sky130_fd_sc_hd__a21boi_0
+X_1055_ _0532_ _0537_ VGND VGND VPWR VPWR 
++ _0153_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_1056_ \Signal_Generator_1_90phase_inst.direction\ _0529_ VGND VGND VPWR VPWR 
++ _0538_
++ sky130_fd_sc_hd__nor2_1
+X_1057_ _0529_ _0153_ _0538_ VGND VGND VPWR 
++ VPWR
++ _0148_ sky130_fd_sc_hd__a21oi_1
+X_1058_ \Signal_Generator_1_90phase_inst.count\[0] \Signal_Generator_1_90phase_inst.count\[1] \Signal_Generator_1_90phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0539_ sky130_fd_sc_hd__a21o_1
+X_1059_ _0533_ _0539_ VGND VGND VPWR VPWR 
++ _0540_
++ sky130_fd_sc_hd__nand2_1
+X_1060_ \Signal_Generator_1_90phase_inst.count\[0] \Signal_Generator_1_90phase_inst.count\[1] \Signal_Generator_1_90phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0541_ sky130_fd_sc_hd__o21ai_0
+X_1061_ _0530_ _0541_ _0532_ VGND VGND VPWR 
++ VPWR
++ _0542_ sky130_fd_sc_hd__a21oi_1
+X_1062_ \Signal_Generator_1_90phase_inst.direction\ _0542_ VGND VGND VPWR VPWR 
++ _0543_
++ sky130_fd_sc_hd__nor2_1
+X_1063_ _0537_ _0540_ _0543_ VGND VGND VPWR 
++ VPWR
++ _0149_ sky130_fd_sc_hd__a21oi_1
+X_1064_ \Signal_Generator_1_90phase_inst.count\[3] _0533_ VGND VGND VPWR VPWR 
++ _0544_
++ sky130_fd_sc_hd__xor2_1
+X_1065_ \Signal_Generator_1_90phase_inst.count\[3] _0530_ VGND VGND VPWR VPWR 
++ _0545_
++ sky130_fd_sc_hd__nand2_1
+X_1066_ _0531_ _0545_ _0532_ VGND VGND VPWR 
++ VPWR
++ _0546_ sky130_fd_sc_hd__a21oi_1
+X_1067_ \Signal_Generator_1_90phase_inst.direction\ _0546_ VGND VGND VPWR VPWR 
++ _0547_
++ sky130_fd_sc_hd__nor2_1
+X_1068_ _0537_ _0544_ _0547_ VGND VGND VPWR 
++ VPWR
++ _0150_ sky130_fd_sc_hd__a21oi_1
+X_1069_ \Signal_Generator_1_90phase_inst.count\[4] _0531_ VGND VGND VPWR VPWR 
++ _0548_
++ sky130_fd_sc_hd__xor2_1
+X_1070_ \Signal_Generator_1_90phase_inst.count\[4] _0534_ VGND VGND VPWR VPWR 
++ _0549_
++ sky130_fd_sc_hd__nor2_1
+X_1071_ \Signal_Generator_1_90phase_inst.count\[5] _0536_ \Signal_Generator_1_90phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0550_ sky130_fd_sc_hd__o21ai_0
+X_1072_ \Signal_Generator_1_90phase_inst.direction\ _0532_ _0548_ _0549_ _0550_ VGND 
++ VGND
++ VPWR VPWR _0151_ sky130_fd_sc_hd__o32ai_1
+X_1073_ \Signal_Generator_1_90phase_inst.count\[4] _0531_ \Signal_Generator_1_90phase_inst.count\[5] VGND VGND VPWR 
++ VPWR
++ _0551_ sky130_fd_sc_hd__o21ai_0
+X_1074_ \Signal_Generator_1_90phase_inst.count\[5] _0535_ \Signal_Generator_1_90phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0552_ sky130_fd_sc_hd__o21ai_0
+X_1075_ _0551_ _0552_ VGND VGND VPWR VPWR 
++ _0152_
++ sky130_fd_sc_hd__nand2_1
+X_1076_ \Signal_Generator_1_0phase_inst.count\[1] \Signal_Generator_1_0phase_inst.count\[0] VGND VGND VPWR VPWR 
++ _0553_
++ sky130_fd_sc_hd__xnor2_1
+X_1077_ \Signal_Generator_1_0phase_inst.count\[1] \Signal_Generator_1_0phase_inst.count\[2] \Signal_Generator_1_0phase_inst.count\[0] VGND VGND VPWR 
++ VPWR
++ _0554_ sky130_fd_sc_hd__or3_1
+X_1078_ \Signal_Generator_1_0phase_inst.count\[3] _0554_ VGND VGND VPWR VPWR 
++ _0555_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_1079_ \Signal_Generator_1_0phase_inst.count\[4] \Signal_Generator_1_0phase_inst.count\[5] _0555_ VGND VGND VPWR 
++ VPWR
++ _0556_ sky130_fd_sc_hd__nor3_1
+X_1080_ \Signal_Generator_1_0phase_inst.count\[1] \Signal_Generator_1_0phase_inst.count\[2] \Signal_Generator_1_0phase_inst.count\[0] VGND VGND VPWR 
++ VPWR
++ _0557_ sky130_fd_sc_hd__nand3_1
+X_1081_ \Signal_Generator_1_0phase_inst.count\[3] _0557_ VGND VGND VPWR VPWR 
++ _0558_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_1082_ \Signal_Generator_1_0phase_inst.count\[4] _0558_ VGND VGND VPWR VPWR 
++ _0559_
++ sky130_fd_sc_hd__and2_0
+X_1083_ \Signal_Generator_1_0phase_inst.count\[4] _0558_ VGND VGND VPWR VPWR 
++ _0560_
++ sky130_fd_sc_hd__nand2_1
+X_1084_ \Signal_Generator_1_0phase_inst.count\[5] _0559_ \Signal_Generator_1_0phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0561_ sky130_fd_sc_hd__a21boi_0
+X_1085_ _0556_ _0561_ VGND VGND VPWR VPWR 
++ _0132_
++ sky130_fd_sc_hd__lpflow_inputiso1p_1
+X_1086_ \Signal_Generator_1_0phase_inst.direction\ _0553_ VGND VGND VPWR VPWR 
++ _0562_
++ sky130_fd_sc_hd__nor2_1
+X_1087_ _0553_ _0132_ _0562_ VGND VGND VPWR 
++ VPWR
++ _0127_ sky130_fd_sc_hd__a21oi_1
+X_1088_ \Signal_Generator_1_0phase_inst.count\[1] \Signal_Generator_1_0phase_inst.count\[0] \Signal_Generator_1_0phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0563_ sky130_fd_sc_hd__a21o_1
+X_1089_ _0557_ _0563_ VGND VGND VPWR VPWR 
++ _0564_
++ sky130_fd_sc_hd__nand2_1
+X_1090_ \Signal_Generator_1_0phase_inst.count\[1] \Signal_Generator_1_0phase_inst.count\[0] \Signal_Generator_1_0phase_inst.count\[2] VGND VGND VPWR 
++ VPWR
++ _0565_ sky130_fd_sc_hd__o21ai_0
+X_1091_ _0554_ _0565_ _0556_ VGND VGND VPWR 
++ VPWR
++ _0566_ sky130_fd_sc_hd__a21oi_1
+X_1092_ \Signal_Generator_1_0phase_inst.direction\ _0566_ VGND VGND VPWR VPWR 
++ _0567_
++ sky130_fd_sc_hd__nor2_1
+X_1093_ _0561_ _0564_ _0567_ VGND VGND VPWR 
++ VPWR
++ _0128_ sky130_fd_sc_hd__a21oi_1
+X_1094_ \Signal_Generator_1_0phase_inst.count\[3] _0557_ VGND VGND VPWR VPWR 
++ _0568_
++ sky130_fd_sc_hd__xor2_1
+X_1095_ \Signal_Generator_1_0phase_inst.count\[3] _0554_ VGND VGND VPWR VPWR 
++ _0569_
++ sky130_fd_sc_hd__nand2_1
+X_1096_ _0555_ _0569_ _0556_ VGND VGND VPWR 
++ VPWR
++ _0570_ sky130_fd_sc_hd__a21oi_1
+X_1097_ \Signal_Generator_1_0phase_inst.direction\ _0570_ VGND VGND VPWR VPWR 
++ _0571_
++ sky130_fd_sc_hd__nor2_1
+X_1098_ _0561_ _0568_ _0571_ VGND VGND VPWR 
++ VPWR
++ _0129_ sky130_fd_sc_hd__a21oi_1
+X_1099_ \Signal_Generator_1_0phase_inst.count\[4] _0555_ VGND VGND VPWR VPWR 
++ _0572_
++ sky130_fd_sc_hd__xor2_1
+X_1100_ \Signal_Generator_1_0phase_inst.count\[4] _0558_ VGND VGND VPWR VPWR 
++ _0573_
++ sky130_fd_sc_hd__nor2_1
+X_1101_ \Signal_Generator_1_0phase_inst.count\[5] _0560_ \Signal_Generator_1_0phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0574_ sky130_fd_sc_hd__o21ai_0
+X_1102_ \Signal_Generator_1_0phase_inst.direction\ _0556_ _0572_ _0573_ _0574_ VGND 
++ VGND
++ VPWR VPWR _0130_ sky130_fd_sc_hd__o32ai_1
+X_1103_ \Signal_Generator_1_0phase_inst.count\[4] _0555_ \Signal_Generator_1_0phase_inst.count\[5] VGND VGND VPWR 
++ VPWR
++ _0575_ sky130_fd_sc_hd__o21ai_0
+X_1104_ \Signal_Generator_1_0phase_inst.count\[5] _0559_ \Signal_Generator_1_0phase_inst.direction\ VGND VGND VPWR 
++ VPWR
++ _0576_ sky130_fd_sc_hd__o21ai_0
+X_1105_ _0575_ _0576_ VGND VGND VPWR VPWR 
++ _0131_
++ sky130_fd_sc_hd__nand2_1
+X_1106_ \Shift_Register_Inst.internal_data[12]\[0] \Shift_Register_Inst.internal_data[11]\[0] VGND VGND VPWR VPWR 
++ _0577_
++ sky130_fd_sc_hd__nor2_1
+X_1107_ \Shift_Register_Inst.internal_data[10]\[0] \Shift_Register_Inst.internal_data[9]\[0] VGND VGND VPWR VPWR 
++ _0578_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_1108_ \Shift_Register_Inst.internal_data[9]\[0] \Shift_Register_Inst.internal_data[10]\[0] VGND VGND VPWR VPWR 
++ _0579_
++ sky130_fd_sc_hd__nand2b_1
+X_1109_ _0397_ _0403_ _0579_ VGND VGND VPWR 
++ VPWR
++ _0580_ sky130_fd_sc_hd__a21oi_1
+X_1110_ \Shift_Register_Inst.internal_data[10]\[0] \Shift_Register_Inst.internal_data[9]\[0] VGND VGND VPWR VPWR 
++ _0581_
++ sky130_fd_sc_hd__nand2b_1
+X_1111_ _0398_ _0401_ _0581_ VGND VGND VPWR 
++ VPWR
++ _0582_ sky130_fd_sc_hd__nor3_1
+X_1112_ _0397_ _0400_ \Shift_Register_Inst.internal_data[10]\[0] \Shift_Register_Inst.internal_data[9]\[0] VGND VGND 
++ VPWR
++ VPWR _0583_ sky130_fd_sc_hd__a211oi_1
+X_1113_ _0580_ _0582_ _0583_ _0577_ VGND VGND 
++ VPWR
++ VPWR _0584_ sky130_fd_sc_hd__o31ai_1
+X_1114_ \Shift_Register_Inst.internal_data[11]\[0] \Shift_Register_Inst.internal_data[12]\[0] VGND VGND VPWR VPWR 
++ _0585_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_1115_ _0403_ _0405_ _0579_ VGND VGND VPWR 
++ VPWR
++ _0586_ sky130_fd_sc_hd__a21oi_1
+X_1116_ _0401_ _0406_ _0581_ VGND VGND VPWR 
++ VPWR
++ _0587_ sky130_fd_sc_hd__nor3_1
+X_1117_ _0400_ _0405_ \Shift_Register_Inst.internal_data[10]\[0] \Shift_Register_Inst.internal_data[9]\[0] VGND VGND 
++ VPWR
++ VPWR _0588_ sky130_fd_sc_hd__a211oi_1
+X_1118_ _0586_ _0587_ _0588_ _0585_ VGND VGND 
++ VPWR
++ VPWR _0589_ sky130_fd_sc_hd__o31ai_1
+X_1119_ NMOS1_PS1 _0577_ _0585_ NMOS1_PS2 VGND VGND 
++ VPWR
++ VPWR _0590_ sky130_fd_sc_hd__a22o_1
+X_1120_ \Shift_Register_Inst.internal_data[10]\[0] \Shift_Register_Inst.internal_data[9]\[0] _0590_ VGND VGND VPWR 
++ VPWR
++ _0591_ sky130_fd_sc_hd__nand3_1
+X_1121_ \Shift_Register_Inst.internal_data[10]\[0] \Shift_Register_Inst.internal_data[9]\[0] PMOS_PS3 VGND VGND VPWR 
++ VPWR
++ _0592_ sky130_fd_sc_hd__nor3b_1
+X_1122_ \Dead_Time_Generator_inst_1.clk\ _0578_ _0581_ _0371_ VGND VGND 
++ VPWR
++ VPWR _0593_ sky130_fd_sc_hd__o2bb2ai_1
+X_1123_ \Shift_Register_Inst.internal_data[12]\[0] \Shift_Register_Inst.internal_data[11]\[0] VGND VGND VPWR VPWR 
++ _0594_
++ sky130_fd_sc_hd__lpflow_isobufsrc_1
+X_1124_ _0592_ _0593_ _0594_ VGND VGND VPWR 
++ VPWR
++ _0595_ sky130_fd_sc_hd__o21ai_0
+X_1125_ _0584_ _0589_ _0591_ _0595_ VGND VGND 
++ VPWR
++ VPWR SIGNAL_OUTPUT sky130_fd_sc_hd__nand4_1
+X_1126_ RST VGND VGND VPWR VPWR _0001_ sky130_fd_sc_hd__clkinv_1
+X_1127_ RST VGND VGND VPWR VPWR _0002_ sky130_fd_sc_hd__clkinv_1
+X_1128_ RST VGND VGND VPWR VPWR _0003_ sky130_fd_sc_hd__clkinv_1
+X_1129_ RST VGND VGND VPWR VPWR _0004_ sky130_fd_sc_hd__clkinv_1
+X_1130_ RST VGND VGND VPWR VPWR _0005_ sky130_fd_sc_hd__clkinv_1
+X_1131_ RST VGND VGND VPWR VPWR _0006_ sky130_fd_sc_hd__clkinv_1
+X_1132_ RST VGND VGND VPWR VPWR _0007_ sky130_fd_sc_hd__clkinv_1
+X_1133_ RST VGND VGND VPWR VPWR _0008_ sky130_fd_sc_hd__clkinv_1
+X_1134_ RST VGND VGND VPWR VPWR _0009_ sky130_fd_sc_hd__clkinv_1
+X_1135_ RST VGND VGND VPWR VPWR _0010_ sky130_fd_sc_hd__clkinv_1
+X_1136_ RST VGND VGND VPWR VPWR _0011_ sky130_fd_sc_hd__clkinv_1
+X_1137_ RST VGND VGND VPWR VPWR _0012_ sky130_fd_sc_hd__clkinv_1
+X_1138_ RST VGND VGND VPWR VPWR _0013_ sky130_fd_sc_hd__clkinv_1
+X_1139_ RST VGND VGND VPWR VPWR _0014_ sky130_fd_sc_hd__clkinv_1
+X_1140_ RST VGND VGND VPWR VPWR _0015_ sky130_fd_sc_hd__clkinv_1
+X_1141_ RST VGND VGND VPWR VPWR _0016_ sky130_fd_sc_hd__clkinv_1
+X_1142_ RST VGND VGND VPWR VPWR _0017_ sky130_fd_sc_hd__clkinv_1
+X_1143_ RST VGND VGND VPWR VPWR _0018_ sky130_fd_sc_hd__clkinv_1
+X_1144_ RST VGND VGND VPWR VPWR _0019_ sky130_fd_sc_hd__clkinv_1
+X_1145_ RST VGND VGND VPWR VPWR _0020_ sky130_fd_sc_hd__clkinv_1
+X_1146_ RST VGND VGND VPWR VPWR _0021_ sky130_fd_sc_hd__clkinv_1
+X_1147_ RST VGND VGND VPWR VPWR _0022_ sky130_fd_sc_hd__clkinv_1
+X_1148_ RST VGND VGND VPWR VPWR _0023_ sky130_fd_sc_hd__clkinv_1
+X_1149_ RST VGND VGND VPWR VPWR _0024_ sky130_fd_sc_hd__clkinv_1
+X_1150_ RST VGND VGND VPWR VPWR _0025_ sky130_fd_sc_hd__clkinv_1
+X_1151_ RST VGND VGND VPWR VPWR _0026_ sky130_fd_sc_hd__clkinv_1
+X_1152_ RST VGND VGND VPWR VPWR _0027_ sky130_fd_sc_hd__clkinv_1
+X_1153_ RST VGND VGND VPWR VPWR _0028_ sky130_fd_sc_hd__clkinv_1
+X_1154_ RST VGND VGND VPWR VPWR _0029_ sky130_fd_sc_hd__clkinv_1
+X_1155_ RST VGND VGND VPWR VPWR _0030_ sky130_fd_sc_hd__clkinv_1
+X_1156_ RST VGND VGND VPWR VPWR _0031_ sky130_fd_sc_hd__clkinv_1
+X_1157_ RST VGND VGND VPWR VPWR _0032_ sky130_fd_sc_hd__clkinv_1
+X_1158_ RST VGND VGND VPWR VPWR _0033_ sky130_fd_sc_hd__clkinv_1
+X_1159_ RST VGND VGND VPWR VPWR _0034_ sky130_fd_sc_hd__clkinv_1
+X_1160_ RST VGND VGND VPWR VPWR _0035_ sky130_fd_sc_hd__clkinv_1
+X_1161_ RST VGND VGND VPWR VPWR _0036_ sky130_fd_sc_hd__clkinv_1
+X_1162_ RST VGND VGND VPWR VPWR _0037_ sky130_fd_sc_hd__clkinv_1
+X_1163_ RST VGND VGND VPWR VPWR _0038_ sky130_fd_sc_hd__clkinv_1
+X_1164_ RST VGND VGND VPWR VPWR _0039_ sky130_fd_sc_hd__clkinv_1
+X_1165_ RST VGND VGND VPWR VPWR _0040_ sky130_fd_sc_hd__clkinv_1
+X_1166_ RST VGND VGND VPWR VPWR _0041_ sky130_fd_sc_hd__clkinv_1
+X_1167_ RST VGND VGND VPWR VPWR _0042_ sky130_fd_sc_hd__clkinv_1
+X_1168_ RST VGND VGND VPWR VPWR _0043_ sky130_fd_sc_hd__clkinv_1
+X_1169_ RST VGND VGND VPWR VPWR _0044_ sky130_fd_sc_hd__clkinv_1
+X_1170_ RST VGND VGND VPWR VPWR _0045_ sky130_fd_sc_hd__clkinv_1
+X_1171_ RST VGND VGND VPWR VPWR _0046_ sky130_fd_sc_hd__clkinv_1
+X_1172_ RST VGND VGND VPWR VPWR _0047_ sky130_fd_sc_hd__clkinv_1
+X_1173_ RST VGND VGND VPWR VPWR _0048_ sky130_fd_sc_hd__clkinv_1
+X_1174_ RST VGND VGND VPWR VPWR _0049_ sky130_fd_sc_hd__clkinv_1
+X_1175_ RST VGND VGND VPWR VPWR _0050_ sky130_fd_sc_hd__clkinv_1
+X_1176_ RST VGND VGND VPWR VPWR _0051_ sky130_fd_sc_hd__clkinv_1
+X_1177_ RST VGND VGND VPWR VPWR _0052_ sky130_fd_sc_hd__clkinv_1
+X_1178_ RST VGND VGND VPWR VPWR _0053_ sky130_fd_sc_hd__clkinv_1
+X_1179_ RST VGND VGND VPWR VPWR _0054_ sky130_fd_sc_hd__clkinv_1
+X_1180_ RST VGND VGND VPWR VPWR _0055_ sky130_fd_sc_hd__clkinv_1
+X_1181_ RST VGND VGND VPWR VPWR _0056_ sky130_fd_sc_hd__clkinv_1
+X_1182_ RST VGND VGND VPWR VPWR _0057_ sky130_fd_sc_hd__clkinv_1
+X_1183_ RST VGND VGND VPWR VPWR _0058_ sky130_fd_sc_hd__clkinv_1
+X_1184_ RST VGND VGND VPWR VPWR _0059_ sky130_fd_sc_hd__clkinv_1
+X_1185_ RST VGND VGND VPWR VPWR _0060_ sky130_fd_sc_hd__clkinv_1
+X_1186_ RST VGND VGND VPWR VPWR _0061_ sky130_fd_sc_hd__clkinv_1
+X_1187_ RST VGND VGND VPWR VPWR _0062_ sky130_fd_sc_hd__clkinv_1
+X_1188_ RST VGND VGND VPWR VPWR _0063_ sky130_fd_sc_hd__clkinv_1
+X_1189_ RST VGND VGND VPWR VPWR _0064_ sky130_fd_sc_hd__clkinv_1
+X_1190_ RST VGND VGND VPWR VPWR _0065_ sky130_fd_sc_hd__clkinv_1
+X_1191_ RST VGND VGND VPWR VPWR _0066_ sky130_fd_sc_hd__clkinv_1
+X_1192_ RST VGND VGND VPWR VPWR _0067_ sky130_fd_sc_hd__clkinv_1
+X_1193_ RST VGND VGND VPWR VPWR _0068_ sky130_fd_sc_hd__clkinv_1
+X_1194_ RST VGND VGND VPWR VPWR _0069_ sky130_fd_sc_hd__clkinv_1
+X_1195_ RST VGND VGND VPWR VPWR _0070_ sky130_fd_sc_hd__clkinv_1
+X_1196_ RST VGND VGND VPWR VPWR _0071_ sky130_fd_sc_hd__clkinv_1
+X_1197_ RST VGND VGND VPWR VPWR _0072_ sky130_fd_sc_hd__clkinv_1
+X_1198_ RST VGND VGND VPWR VPWR _0073_ sky130_fd_sc_hd__clkinv_1
+X_1199_ RST VGND VGND VPWR VPWR _0074_ sky130_fd_sc_hd__clkinv_1
+X_1200_ RST VGND VGND VPWR VPWR _0075_ sky130_fd_sc_hd__clkinv_1
+X_1201_ RST VGND VGND VPWR VPWR _0076_ sky130_fd_sc_hd__clkinv_1
+X_1202_ RST VGND VGND VPWR VPWR _0077_ sky130_fd_sc_hd__clkinv_1
+X_1203_ RST VGND VGND VPWR VPWR _0078_ sky130_fd_sc_hd__clkinv_1
+X_1204_ \Dead_Time_Generator_inst_1.clk\ _0079_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_4.count_dt\[0]
++ sky130_fd_sc_hd__dfxtp_1
+X_1205_ \Dead_Time_Generator_inst_1.clk\ _0080_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_4.count_dt\[1]
++ sky130_fd_sc_hd__dfxtp_1
+X_1206_ \Dead_Time_Generator_inst_1.clk\ _0081_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_4.count_dt\[2]
++ sky130_fd_sc_hd__dfxtp_1
+X_1207_ \Dead_Time_Generator_inst_1.clk\ _0082_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_4.count_dt\[3]
++ sky130_fd_sc_hd__dfxtp_1
+X_1208_ \Dead_Time_Generator_inst_1.clk\ _0083_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_4.count_dt\[4]
++ sky130_fd_sc_hd__dfxtp_1
+X_1209_ CLK_SR _0084_ _0000_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[0]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1210_ \Dead_Time_Generator_inst_1.clk\ _0085_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_3.count_dt\[0]
++ sky130_fd_sc_hd__dfxtp_1
+X_1211_ \Dead_Time_Generator_inst_1.clk\ _0086_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_3.count_dt\[1]
++ sky130_fd_sc_hd__dfxtp_1
+X_1212_ \Dead_Time_Generator_inst_1.clk\ _0087_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_3.count_dt\[2]
++ sky130_fd_sc_hd__dfxtp_1
+X_1213_ \Dead_Time_Generator_inst_1.clk\ _0088_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_3.count_dt\[3]
++ sky130_fd_sc_hd__dfxtp_1
+X_1214_ \Dead_Time_Generator_inst_1.clk\ _0089_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_3.count_dt\[4]
++ sky130_fd_sc_hd__dfxtp_1
+X_1215_ \Dead_Time_Generator_inst_1.clk\ _0090_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_4.go\
++ sky130_fd_sc_hd__dfxtp_1
+X_1216_ \Dead_Time_Generator_inst_1.clk\ _0091_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_2.count_dt\[0]
++ sky130_fd_sc_hd__dfxtp_1
+X_1217_ \Dead_Time_Generator_inst_1.clk\ _0092_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_2.count_dt\[1]
++ sky130_fd_sc_hd__dfxtp_1
+X_1218_ \Dead_Time_Generator_inst_1.clk\ _0093_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_2.count_dt\[2]
++ sky130_fd_sc_hd__dfxtp_1
+X_1219_ \Dead_Time_Generator_inst_1.clk\ _0094_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_2.count_dt\[3]
++ sky130_fd_sc_hd__dfxtp_1
+X_1220_ \Dead_Time_Generator_inst_1.clk\ _0095_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_2.count_dt\[4]
++ sky130_fd_sc_hd__dfxtp_1
+X_1221_ \Dead_Time_Generator_inst_1.clk\ _0096_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_3.go\
++ sky130_fd_sc_hd__dfxtp_1
+X_1222_ \Dead_Time_Generator_inst_1.clk\ _0097_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_1.count_dt\[0]
++ sky130_fd_sc_hd__dfxtp_1
+X_1223_ \Dead_Time_Generator_inst_1.clk\ _0098_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_1.count_dt\[1]
++ sky130_fd_sc_hd__dfxtp_1
+X_1224_ \Dead_Time_Generator_inst_1.clk\ _0099_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_1.count_dt\[2]
++ sky130_fd_sc_hd__dfxtp_1
+X_1225_ \Dead_Time_Generator_inst_1.clk\ _0100_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_1.count_dt\[3]
++ sky130_fd_sc_hd__dfxtp_1
+X_1226_ \Dead_Time_Generator_inst_1.clk\ _0101_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_1.count_dt\[4]
++ sky130_fd_sc_hd__dfxtp_1
+X_1227_ \Dead_Time_Generator_inst_1.clk\ _0102_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_2.go\
++ sky130_fd_sc_hd__dfxtp_1
+X_1228_ \Dead_Time_Generator_inst_1.clk\ _0168_ _0001_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_270phase_inst.count\[0] sky130_fd_sc_hd__dfrtp_1
+X_1229_ \Dead_Time_Generator_inst_1.clk\ _0169_ _0002_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_270phase_inst.count\[1] sky130_fd_sc_hd__dfrtp_1
+X_1230_ \Dead_Time_Generator_inst_1.clk\ _0170_ _0003_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_270phase_inst.count\[2] sky130_fd_sc_hd__dfrtp_1
+X_1231_ \Dead_Time_Generator_inst_1.clk\ _0171_ _0004_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_270phase_inst.count\[3] sky130_fd_sc_hd__dfrtp_1
+X_1232_ \Dead_Time_Generator_inst_1.clk\ _0172_ _0005_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_270phase_inst.count\[4] sky130_fd_sc_hd__dfrtp_1
+X_1233_ \Dead_Time_Generator_inst_1.clk\ _0173_ _0006_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_270phase_inst.count\[5] sky130_fd_sc_hd__dfstp_2
+X_1234_ \Dead_Time_Generator_inst_1.clk\ _0174_ _0007_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_270phase_inst.direction\ sky130_fd_sc_hd__dfrtp_1
+X_1235_ \Dead_Time_Generator_inst_1.clk\ _0161_ _0008_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_180phase_inst.count\[0] sky130_fd_sc_hd__dfstp_2
+X_1236_ \Dead_Time_Generator_inst_1.clk\ _0162_ _0009_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_180phase_inst.count\[1] sky130_fd_sc_hd__dfstp_2
+X_1237_ \Dead_Time_Generator_inst_1.clk\ _0163_ _0010_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_180phase_inst.count\[2] sky130_fd_sc_hd__dfstp_2
+X_1238_ \Dead_Time_Generator_inst_1.clk\ _0164_ _0011_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_180phase_inst.count\[3] sky130_fd_sc_hd__dfstp_2
+X_1239_ \Dead_Time_Generator_inst_1.clk\ _0165_ _0012_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_180phase_inst.count\[4] sky130_fd_sc_hd__dfstp_2
+X_1240_ \Dead_Time_Generator_inst_1.clk\ _0166_ _0013_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_180phase_inst.count\[5] sky130_fd_sc_hd__dfstp_2
+X_1241_ \Dead_Time_Generator_inst_1.clk\ _0167_ _0014_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_180phase_inst.direction\ sky130_fd_sc_hd__dfstp_2
+X_1242_ \Dead_Time_Generator_inst_1.clk\ _0175_ _0015_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_90phase_inst.count\[0] sky130_fd_sc_hd__dfstp_2
+X_1243_ \Dead_Time_Generator_inst_1.clk\ _0176_ _0016_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_90phase_inst.count\[1] sky130_fd_sc_hd__dfstp_2
+X_1244_ \Dead_Time_Generator_inst_1.clk\ _0177_ _0017_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_90phase_inst.count\[2] sky130_fd_sc_hd__dfstp_2
+X_1245_ \Dead_Time_Generator_inst_1.clk\ _0178_ _0018_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_90phase_inst.count\[3] sky130_fd_sc_hd__dfstp_2
+X_1246_ \Dead_Time_Generator_inst_1.clk\ _0179_ _0019_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_90phase_inst.count\[4] sky130_fd_sc_hd__dfstp_2
+X_1247_ \Dead_Time_Generator_inst_1.clk\ _0180_ _0020_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_90phase_inst.count\[5] sky130_fd_sc_hd__dfrtp_1
+X_1248_ \Dead_Time_Generator_inst_1.clk\ _0181_ _0021_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_90phase_inst.direction\ sky130_fd_sc_hd__dfstp_2
+X_1249_ \Dead_Time_Generator_inst_1.clk\ _0154_ _0022_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_0phase_inst.count\[0] sky130_fd_sc_hd__dfrtp_1
+X_1250_ \Dead_Time_Generator_inst_1.clk\ _0155_ _0023_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_0phase_inst.count\[1] sky130_fd_sc_hd__dfrtp_1
+X_1251_ \Dead_Time_Generator_inst_1.clk\ _0156_ _0024_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_0phase_inst.count\[2] sky130_fd_sc_hd__dfrtp_1
+X_1252_ \Dead_Time_Generator_inst_1.clk\ _0157_ _0025_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_0phase_inst.count\[3] sky130_fd_sc_hd__dfrtp_1
+X_1253_ \Dead_Time_Generator_inst_1.clk\ _0158_ _0026_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_0phase_inst.count\[4] sky130_fd_sc_hd__dfrtp_1
+X_1254_ \Dead_Time_Generator_inst_1.clk\ _0159_ _0027_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_0phase_inst.count\[5] sky130_fd_sc_hd__dfrtp_1
+X_1255_ \Dead_Time_Generator_inst_1.clk\ _0160_ _0028_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_2_0phase_inst.direction\ sky130_fd_sc_hd__dfstp_2
+X_1256_ \Dead_Time_Generator_inst_1.clk\ _0140_ _0029_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_270phase_inst.count\[0] sky130_fd_sc_hd__dfrtp_1
+X_1257_ \Dead_Time_Generator_inst_1.clk\ _0141_ _0030_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_270phase_inst.count\[1] sky130_fd_sc_hd__dfrtp_1
+X_1258_ \Dead_Time_Generator_inst_1.clk\ _0142_ _0031_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_270phase_inst.count\[2] sky130_fd_sc_hd__dfrtp_1
+X_1259_ \Dead_Time_Generator_inst_1.clk\ _0143_ _0032_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_270phase_inst.count\[3] sky130_fd_sc_hd__dfrtp_1
+X_1260_ \Dead_Time_Generator_inst_1.clk\ _0144_ _0033_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_270phase_inst.count\[4] sky130_fd_sc_hd__dfrtp_1
+X_1261_ \Dead_Time_Generator_inst_1.clk\ _0145_ _0034_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_270phase_inst.count\[5] sky130_fd_sc_hd__dfstp_2
+X_1262_ \Dead_Time_Generator_inst_1.clk\ _0146_ _0035_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_270phase_inst.direction\ sky130_fd_sc_hd__dfrtp_1
+X_1263_ \Dead_Time_Generator_inst_1.clk\ _0133_ _0036_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_180phase_inst.count\[0] sky130_fd_sc_hd__dfstp_2
+X_1264_ \Dead_Time_Generator_inst_1.clk\ _0134_ _0037_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_180phase_inst.count\[1] sky130_fd_sc_hd__dfstp_2
+X_1265_ \Dead_Time_Generator_inst_1.clk\ _0135_ _0038_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_180phase_inst.count\[2] sky130_fd_sc_hd__dfstp_2
+X_1266_ \Dead_Time_Generator_inst_1.clk\ _0136_ _0039_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_180phase_inst.count\[3] sky130_fd_sc_hd__dfstp_2
+X_1267_ \Dead_Time_Generator_inst_1.clk\ _0137_ _0040_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_180phase_inst.count\[4] sky130_fd_sc_hd__dfstp_2
+X_1268_ \Dead_Time_Generator_inst_1.clk\ _0138_ _0041_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_180phase_inst.count\[5] sky130_fd_sc_hd__dfstp_2
+X_1269_ \Dead_Time_Generator_inst_1.clk\ _0139_ _0042_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_180phase_inst.direction\ sky130_fd_sc_hd__dfstp_2
+X_1270_ \Dead_Time_Generator_inst_1.clk\ _0147_ _0043_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_90phase_inst.count\[0] sky130_fd_sc_hd__dfstp_2
+X_1271_ \Dead_Time_Generator_inst_1.clk\ _0148_ _0044_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_90phase_inst.count\[1] sky130_fd_sc_hd__dfstp_2
+X_1272_ \Dead_Time_Generator_inst_1.clk\ _0149_ _0045_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_90phase_inst.count\[2] sky130_fd_sc_hd__dfstp_2
+X_1273_ \Dead_Time_Generator_inst_1.clk\ _0150_ _0046_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_90phase_inst.count\[3] sky130_fd_sc_hd__dfstp_2
+X_1274_ \Dead_Time_Generator_inst_1.clk\ _0151_ _0047_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_90phase_inst.count\[4] sky130_fd_sc_hd__dfstp_2
+X_1275_ \Dead_Time_Generator_inst_1.clk\ _0152_ _0048_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_90phase_inst.count\[5] sky130_fd_sc_hd__dfrtp_1
+X_1276_ \Dead_Time_Generator_inst_1.clk\ _0153_ _0049_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_90phase_inst.direction\ sky130_fd_sc_hd__dfstp_2
+X_1277_ \Dead_Time_Generator_inst_1.clk\ _0126_ _0050_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_0phase_inst.count\[0] sky130_fd_sc_hd__dfrtp_1
+X_1278_ \Dead_Time_Generator_inst_1.clk\ _0127_ _0051_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_0phase_inst.count\[1] sky130_fd_sc_hd__dfrtp_1
+X_1279_ \Dead_Time_Generator_inst_1.clk\ _0128_ _0052_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_0phase_inst.count\[2] sky130_fd_sc_hd__dfrtp_1
+X_1280_ \Dead_Time_Generator_inst_1.clk\ _0129_ _0053_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_0phase_inst.count\[3] sky130_fd_sc_hd__dfrtp_1
+X_1281_ \Dead_Time_Generator_inst_1.clk\ _0130_ _0054_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_0phase_inst.count\[4] sky130_fd_sc_hd__dfrtp_1
+X_1282_ \Dead_Time_Generator_inst_1.clk\ _0131_ _0055_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_0phase_inst.count\[5] sky130_fd_sc_hd__dfrtp_1
+X_1283_ \Dead_Time_Generator_inst_1.clk\ _0132_ _0056_ VGND VGND VPWR 
++ VPWR
++ \Signal_Generator_1_0phase_inst.direction\ sky130_fd_sc_hd__dfstp_2
+X_1284_ \Dead_Time_Generator_inst_1.clk\ _0103_ VGND VGND VPWR VPWR 
++ \Dead_Time_Generator_inst_1.go\
++ sky130_fd_sc_hd__dfxtp_1
+X_1285_ CLK_SR _0104_ _0057_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.shift_state\[0] sky130_fd_sc_hd__dfrtp_1
+X_1286_ CLK_SR _0105_ _0058_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.shift_state\[1] sky130_fd_sc_hd__dfrtp_1
+X_1287_ CLK_SR _0106_ _0059_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.shift_state\[2] sky130_fd_sc_hd__dfrtp_1
+X_1288_ CLK_SR _0107_ _0060_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.shift_state\[3] sky130_fd_sc_hd__dfrtp_1
+X_1289_ CLK_SR _0108_ _0061_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.shift_state\[4] sky130_fd_sc_hd__dfrtp_1
+X_1290_ CLK_SR _0109_ _0062_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[1]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1291_ CLK_SR _0110_ _0063_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[2]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1292_ CLK_SR _0111_ _0064_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[3]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1293_ CLK_SR _0112_ _0065_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[4]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1294_ CLK_SR _0113_ _0066_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[5]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1295_ CLK_SR _0114_ _0067_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[6]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1296_ CLK_SR _0115_ _0068_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[7]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1297_ CLK_SR _0116_ _0069_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[8]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1298_ CLK_SR _0117_ _0070_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[9]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1299_ CLK_SR _0118_ _0071_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[10]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1300_ CLK_SR _0119_ _0072_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[11]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1301_ CLK_SR _0120_ _0073_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[12]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1302_ CLK_SR _0121_ _0074_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[13]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1303_ CLK_SR _0122_ _0075_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[14]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1304_ CLK_SR _0123_ _0076_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[15]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1305_ CLK_SR _0124_ _0077_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[16]\[0] sky130_fd_sc_hd__dfrtp_1
+X_1306_ CLK_SR _0125_ _0078_ VGND VGND VPWR 
++ VPWR
++ \Shift_Register_Inst.internal_data[17]\[0] sky130_fd_sc_hd__dfrtp_1
+
+.ends
+.end
